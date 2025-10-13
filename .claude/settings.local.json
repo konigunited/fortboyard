@@ -13,7 +13,12 @@
       "Bash(ls:*)",
       "WebFetch(domain:yandex.ru)",
       "Bash(dir \"C:\\Users\\F12$\\Desktop\\ПРОГИ\\работа\\форт боярд\\assets\")",
-      "Bash(findstr:*)"
+      "Bash(findstr:*)",
+      "Bash(git commit:*)",
+      "Bash(git remote add:*)",
+      "Bash(git branch:*)",
+      "Bash(git push:*)",
+      "Bash(perl:*)"
     ],
     "deny": [],
     "ask": []

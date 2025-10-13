@@ -523,40 +523,6 @@ window.addEventListener('load', () => {
     }, 100);
 });
 
-// Theme Toggle
-const themeToggle = document.getElementById('themeToggle');
-const themeIcon = document.querySelector('.theme-icon');
-const html = document.documentElement;
-
-// Check for saved theme preference or default to 'light'
-const currentTheme = localStorage.getItem('theme') || 'light';
-html.setAttribute('data-theme', currentTheme);
-
-// Update icon based on current theme
-if (currentTheme === 'dark') {
-    themeIcon.textContent = '☀️';
-} else {
-    themeIcon.textContent = '🌙';
-}
-
-// Toggle theme on button click
-if (themeToggle) {
-    themeToggle.addEventListener('click', () => {
-        const currentTheme = html.getAttribute('data-theme');
-        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-
-        html.setAttribute('data-theme', newTheme);
-        localStorage.setItem('theme', newTheme);
-
-        // Update icon with animation
-        themeIcon.style.transform = 'rotate(360deg)';
-        setTimeout(() => {
-            themeIcon.textContent = newTheme === 'dark' ? '☀️' : '🌙';
-            themeIcon.style.transform = 'rotate(0deg)';
-        }, 150);
-    });
-}
-
 // FAQ Accordion
 document.querySelectorAll(".faq-question").forEach(question => {
     question.addEventListener("click", () => {
