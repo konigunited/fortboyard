@@ -1,0 +1,1870 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Детский День Рождения - Форт Боярд Калининград</title>
+    <link rel="stylesheet" href="style.css?v=4">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="logo">ФОРТ БОЯРД</div>
+            <button class="menu-toggle" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="birthday.html" class="active">Дни рождения</a></li>
+                <li><a href="corporate.html">Корпоративы</a></li>
+                <li><a href="class-trip.html">Поход классом</a></li>
+                <li><a href="graduation.html">Выпускные</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <a href="#order" class="btn btn-primary">Заказать</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero hero-small">
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="assets/birthday-video.mp4" type="video/mp4">
+            <source src="assets/hero-video.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+            <h1 class="hero-title">Детский День Рождения<br>в Форт Боярд</h1>
+            <p class="hero-subtitle">Незабываемый праздник для вашего ребенка</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="content-section">
+        <div class="container">
+            <div class="content-grid">
+                <div class="content-main">
+                    <h2>Незабываемый День Рождения!</h2>
+                    <p>Подарите своему ребенку настоящее приключение! Квест Форт Боярд - это 2,5 часа веселья, испытаний и незабываемых эмоций для именинника и его друзей.</p>
+
+                    <h3>Что входит в программу:</h3>
+                    <ul class="features-list">
+                        <li>🎮 <strong>Квест Форт Боярд</strong> - командные испытания и загадки</li>
+                        <li>🐍 <strong>Встреча с экзотическими животными</strong> - питоны, игуаны, еноты</li>
+                        <li>💃 <strong>Дискотека</strong> - зажигательные танцы после квеста</li>
+                        <li>📸 <strong>Фотозона</strong> - яркие фото на память</li>
+                        <li>🎂 <strong>Праздничная зона</strong> - место для торта и угощений</li>
+                        <li>🎁 <strong>Призы</strong> - подарки для всех участников</li>
+                    </ul>
+
+                    <div class="highlight-box">
+                        <h3>Почему выбирают нас?</h3>
+                        <div class="benefits-grid">
+                            <div class="benefit-item">
+                                <span class="benefit-icon">👨‍👩‍👧‍👦</span>
+                                <h4>Для любого возраста</h4>
+                                <p>Программа адаптируется под возраст детей от 6 лет</p>
+                            </div>
+                            <div class="benefit-item">
+                                <span class="benefit-icon">🎭</span>
+                                <h4>Опытные аниматоры</h4>
+                                <p>Профессиональные ведущие с опытом</p>
+                            </div>
+                            <div class="benefit-item">
+                                <span class="benefit-icon">🏆</span>
+                                <h4>Безопасность</h4>
+                                <p>Все испытания безопасны и под контролем</p>
+                            </div>
+                            <div class="benefit-item">
+                                <span class="benefit-icon">⏱️</span>
+                                <h4>2,5 часа программы</h4>
+                                <p>Насыщенная программа без простоев</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3>Как проходит праздник:</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-number">1</div>
+                            <div class="timeline-content">
+                                <h4>Встреча гостей (15 мин)</h4>
+                                <p>Знакомство с командой, объяснение правил</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-number">2</div>
+                            <div class="timeline-content">
+                                <h4>Квест Форт Боярд (1,5 часа)</h4>
+                                <p>Прохождение испытаний, загадки старца Фура, сбор ключей</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-number">3</div>
+                            <div class="timeline-content">
+                                <h4>Экзотические животные (20 мин)</h4>
+                                <p>Знакомство с питонами, игуанами, енотами</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-number">4</div>
+                            <div class="timeline-content">
+                                <h4>Дискотека и торт (30 мин)</h4>
+                                <p>Зажигательные танцы, чаепитие с тортом</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-sidebar">
+                    <div class="sidebar-card">
+                        <h3>Стоимость</h3>
+                        <div class="price-box">
+                            <div class="price-label">От</div>
+                            <div class="price-value">10 000 ₽</div>
+                            <div class="price-description">за группу до 15 человек</div>
+                        </div>
+                        <ul class="price-includes">
+                            <li>✓ 2,5 часа программы</li>
+                            <li>✓ Все испытания</li>
+                            <li>✓ Экзотические животные</li>
+                            <li>✓ Дискотека</li>
+                            <li>✓ Призы участникам</li>
+                        </ul>
+                        <a href="#order" class="btn btn-primary btn-block">Заказать праздник</a>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3>Дополнительно</h3>
+                        <ul class="additional-services">
+                            <li>🍕 Организация питания</li>
+                            <li>📷 Профессиональный фотограф</li>
+                            <li>🎈 Оформление зала</li>
+                            <li>🎂 Заказ торта</li>
+                            <li>🎪 Дополнительные шоу-программы</li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-card contact-card-sidebar">
+                        <h3>Есть вопросы?</h3>
+                        <p>Позвоните нам или оставьте заявку</p>
+                        <a href="tel:+79622604324" class="contact-phone">+7 (962) 260-43-24</a>
+                        <p class="contact-hours">Ежедневно 9:00-21:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Form Section -->
+    <section id="order" class="order">
+        <div class="container">
+            <h2 class="section-title">Заказать День Рождения</h2>
+            <form class="order-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="phone" placeholder="Телефон" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="number" name="guests" placeholder="Количество детей" min="6" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="date" name="date" placeholder="Желаемая дата" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Дополнительные пожелания" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn btn-large btn-primary">Отправить заявку</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Форт Боярд Калининград. Все права защищены.</p>
+            <div class="social-links">
+                <a href="#" aria-label="WhatsApp">WhatsApp</a>
+                <a href="#" aria-label="Telegram">Telegram</a>
+                <a href="#" aria-label="Instagram">Instagram</a>
+                <a href="#" aria-label="VK">VK</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поход Классом - Форт Боярд Калининград</title>
+    <link rel="stylesheet" href="style.css?v=4">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="logo">ФОРТ БОЯРД</div>
+            <button class="menu-toggle" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="birthday.html">Дни рождения</a></li>
+                <li><a href="corporate.html">Корпоративы</a></li>
+                <li><a href="class-trip.html" class="active">Поход классом</a></li>
+                <li><a href="graduation.html">Выпускные</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <a href="#order" class="btn btn-primary">Заказать</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero hero-small">
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="assets/class-trip-video.mp4" type="video/mp4">
+            <source src="assets/hero-video.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+            <h1 class="hero-title">Поход Классом<br>в Форт Боярд</h1>
+            <p class="hero-subtitle">Увлекательное приключение для всего класса</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="content-section">
+        <div class="container">
+            <div class="content-grid">
+                <div class="content-main">
+                    <h2>Квест для школьного класса</h2>
+                    <p>Форт Боярд - идеальное место для похода всем классом! Это не просто развлечение, а полезное мероприятие, которое развивает командную работу, логику и сплочает ребят.</p>
+
+                    <div class="highlight-box">
+                        <h3>🎯 Почему поход классом к нам?</h3>
+                        <ul class="features-list">
+                            <li>✅ <strong>Сплочение коллектива</strong> - дети учатся работать в команде</li>
+                            <li>✅ <strong>Развитие навыков</strong> - логика, смекалка, коммуникация</li>
+                            <li>✅ <strong>Активный отдых</strong> - физические и интеллектуальные испытания</li>
+                            <li>✅ <strong>Безопасность</strong> - все под контролем профессионалов</li>
+                            <li>✅ <strong>Воспоминания</strong> - яркие эмоции и фото на память</li>
+                        </ul>
+                    </div>
+
+                    <h3>Что входит в программу:</h3>
+                    <ul class="features-list">
+                        <li>🎮 <strong>Квест Форт Боярд</strong> - 10+ увлекательных испытаний</li>
+                        <li>🧩 <strong>Загадки старца Фура</strong> - интеллектуальные задачки</li>
+                        <li>🐍 <strong>Шоу с экзотическими животными</strong> - питоны, игуаны, еноты</li>
+                        <li>💃 <strong>Дискотека</strong> - танцы и веселье после квеста</li>
+                        <li>🎁 <strong>Призы</strong> - награды для победителей</li>
+                        <li>📸 <strong>Фотозона</strong> - памятные фото всего класса</li>
+                        <li>🍰 <strong>Зона отдыха</strong> - место для чаепития</li>
+                    </ul>
+
+                    <h3>Программы для разных возрастов:</h3>
+                    <div class="age-programs">
+                        <div class="age-card">
+                            <h4>🎒 1-4 классы</h4>
+                            <p><strong>Продолжительность:</strong> 2 часа</p>
+                            <p>Простые и веселые испытания, больше игровых элементов, адаптированные загадки. Акцент на командную работу и веселье.</p>
+                        </div>
+                        <div class="age-card">
+                            <h4>📚 5-8 классы</h4>
+                            <p><strong>Продолжительность:</strong> 2,5 часа</p>
+                            <p>Баланс физических и интеллектуальных испытаний, более сложные загадки, современная музыка на дискотеке.</p>
+                        </div>
+                        <div class="age-card">
+                            <h4>🎓 9-11 классы</h4>
+                            <p><strong>Продолжительность:</strong> 2,5-3 часа</p>
+                            <p>Сложные командные задачи, логические головоломки, возможность добавить соревновательный элемент между командами.</p>
+                        </div>
+                    </div>
+
+                    <h3>Как проходит мероприятие:</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-number">1</div>
+                            <div class="timeline-content">
+                                <h4>Встреча класса (10 мин)</h4>
+                                <p>Приветствие, инструктаж по технике безопасности, деление на команды</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-number">2</div>
+                            <div class="timeline-content">
+                                <h4>Квест Форт Боярд (1-1,5 часа)</h4>
+                                <p>Прохождение испытаний: физические задачи, логические загадки, поиск ключей</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-number">3</div>
+                            <div class="timeline-content">
+                                <h4>Встреча со старцем Фуром (15 мин)</h4>
+                                <p>Ответы на хитрые загадки для получения кодового слова от сокровищницы</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-number">4</div>
+                            <div class="timeline-content">
+                                <h4>Экзотические животные (20 мин)</h4>
+                                <p>Знакомство с питонами, игуанами, енотами. Можно погладить и сфотографироваться</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-number">5</div>
+                            <div class="timeline-content">
+                                <h4>Дискотека и награждение (30 мин)</h4>
+                                <p>Зажигательные танцы, подведение итогов, вручение призов, фотосессия</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3>Для учителей и родителей:</h3>
+                    <div class="info-box">
+                        <h4>📋 Организационные моменты:</h4>
+                        <ul class="parents-info">
+                            <li>✓ <strong>Безопасность:</strong> Все испытания под контролем опытных инструкторов</li>
+                            <li>✓ <strong>Страхование:</strong> Возможна организация страхования участников</li>
+                            <li>✓ <strong>Медработник:</strong> На территории есть аптечка первой помощи</li>
+                            <li>✓ <strong>Гардероб:</strong> Удобная раздевалка для верхней одежды</li>
+                            <li>✓ <strong>Питание:</strong> Можно принести свое или заказать кейтеринг</li>
+                            <li>✓ <strong>Сопровождение:</strong> Учителя и родители могут присутствовать</li>
+                            <li>✓ <strong>Фото/видео:</strong> Родители могут фотографировать из зоны ожидания</li>
+                        </ul>
+                    </div>
+
+                    <h3>Преимущества похода в Форт Боярд:</h3>
+                    <div class="benefits-grid">
+                        <div class="benefit-item">
+                            <span class="benefit-icon">🤝</span>
+                            <h4>Сплочение класса</h4>
+                            <p>Общие испытания объединяют одноклассников</p>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">🧠</span>
+                            <h4>Развитие навыков</h4>
+                            <p>Логика, работа в команде, лидерские качества</p>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">🎉</span>
+                            <h4>Яркие эмоции</h4>
+                            <p>Позитивные воспоминания на долгие годы</p>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">🏃</span>
+                            <h4>Активный отдых</h4>
+                            <p>Физическая активность в игровой форме</p>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">🎓</span>
+                            <h4>Образовательный элемент</h4>
+                            <p>Загадки на эрудицию и смекалку</p>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">📱</span>
+                            <h4>Контент для соцсетей</h4>
+                            <p>Множество ярких фото и видео</p>
+                        </div>
+                    </div>
+
+                    <h3>Отзывы учителей:</h3>
+                    <div class="testimonials">
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">"Ходили всем 5 классом - дети были в восторге! Особенно понравились животные и испытания. Видно, что организаторы профессионалы. Рекомендую!"</p>
+                            <p class="testimonial-author">Мария Ивановна, учитель 5Б класса</p>
+                        </div>
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">"Отличное место для похода классом! Дети были заняты все время, никто не скучал. Особенно приятно, что есть образовательный элемент."</p>
+                            <p class="testimonial-author">Светлана Петровна, классный руководитель 7А</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-sidebar">
+                    <div class="sidebar-card">
+                        <h3>Стоимость</h3>
+                        <div class="price-box">
+                            <div class="price-label">От</div>
+                            <div class="price-value">8 000 ₽</div>
+                            <div class="price-description">за класс до 25 человек</div>
+                        </div>
+                        <ul class="price-includes">
+                            <li>✓ 2-2,5 часа программы</li>
+                            <li>✓ Квест Форт Боярд</li>
+                            <li>✓ Все испытания и реквизит</li>
+                            <li>✓ Экзотические животные</li>
+                            <li>✓ Дискотека с DJ</li>
+                            <li>✓ Призы участникам</li>
+                            <li>✓ Фотозона</li>
+                        </ul>
+                        <a href="#order" class="btn btn-primary btn-block">Забронировать</a>
+                    </div>
+
+                    <div class="sidebar-card special-offer">
+                        <h3>🎁 Специальное предложение</h3>
+                        <p><strong>При бронировании на будний день (пн-чт) скидка 15%!</strong></p>
+                        <p class="note">Акция действует при бронировании минимум за неделю</p>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3>Количество участников</h3>
+                        <ul class="group-info">
+                            <li><strong>Минимум:</strong> 10 человек</li>
+                            <li><strong>Максимум:</strong> 55 человек</li>
+                            <li><strong>Оптимально:</strong> 20-30 человек</li>
+                        </ul>
+                        <p class="note">Для больших классов организуем деление на подгруппы</p>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3>Дополнительные услуги</h3>
+                        <ul class="additional-services">
+                            <li>🍕 Организация питания</li>
+                            <li>📷 Профессиональный фотограф</li>
+                            <li>🎥 Видеосъемка мероприятия</li>
+                            <li>🎂 Заказ сладкого стола</li>
+                            <li>🎈 Оформление шарами</li>
+                            <li>🚌 Организация трансфера</li>
+                            <li>🎁 Памятные дипломы</li>
+                            <li>📀 Фотокнига класса</li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-card contact-card-sidebar">
+                        <h3>Вопросы по организации?</h3>
+                        <p>Звоните, ответим на все вопросы!</p>
+                        <a href="tel:+79622604324" class="contact-phone">+7 (962) 260-43-24</a>
+                        <p class="contact-hours">Ежедневно 9:00-21:00</p>
+                    </div>
+
+                    <div class="sidebar-card info-card">
+                        <h3>ℹ️ Полезная информация</h3>
+                        <ul class="info-list">
+                            <li><strong>Одежда:</strong> Удобная спортивная</li>
+                            <li><strong>Обувь:</strong> Кроссовки или кеды</li>
+                            <li><strong>Возраст:</strong> От 7 лет</li>
+                            <li><strong>Документы:</strong> Списки детей</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Form Section -->
+    <section id="order" class="order">
+        <div class="container">
+            <h2 class="section-title">Забронировать Поход Классом</h2>
+            <p class="section-subtitle">Оставьте заявку и мы свяжемся с вами для уточнения деталей</p>
+            <form class="order-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Ваше имя (учитель/родитель) *" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="phone" placeholder="Телефон *" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" name="school" placeholder="Школа и класс *" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" name="students" placeholder="Количество детей *" min="10" max="55" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="date" name="date" placeholder="Желаемая дата *" required>
+                    </div>
+                    <div class="form-group">
+                        <select name="age_group" required>
+                            <option value="">Возрастная группа</option>
+                            <option value="1-4">1-4 классы</option>
+                            <option value="5-8">5-8 классы</option>
+                            <option value="9-11">9-11 классы</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Дополнительные пожелания (питание, фотограф и т.д.)" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn btn-large btn-primary">Отправить заявку</button>
+                <p class="form-privacy">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности</p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Форт Боярд Калининград. Все права защищены.</p>
+            <div class="social-links">
+                <a href="#" aria-label="WhatsApp">WhatsApp</a>
+                <a href="#" aria-label="Telegram">Telegram</a>
+                <a href="#" aria-label="Instagram">Instagram</a>
+                <a href="#" aria-label="VK">VK</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Форт Боярд Калининград</title>
+    <link rel="stylesheet" href="style.css?v=4">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="logo">ФОРТ БОЯРД</div>
+            <button class="menu-toggle" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="birthday.html">Дни рождения</a></li>
+                <li><a href="corporate.html">Корпоративы</a></li>
+                <li><a href="class-trip.html">Поход классом</a></li>
+                <li><a href="graduation.html">Выпускные</a></li>
+                <li><a href="contacts.html" class="active">Контакты</a></li>
+            </ul>
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <a href="#order" class="btn btn-primary">Заказать</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero hero-small">
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="assets/contacts-video.mp4" type="video/mp4">
+            <source src="assets/hero-video.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+            <h1 class="hero-title">Контакты</h1>
+            <p class="hero-subtitle">Свяжитесь с нами удобным способом</p>
+        </div>
+    </section>
+
+    <!-- Contacts Content -->
+    <section class="content-section">
+        <div class="container">
+            <div class="contacts-page-grid">
+                <div class="contacts-main">
+                    <h2>Как с нами связаться</h2>
+                    <p>Мы всегда рады ответить на ваши вопросы и помочь организовать незабываемое мероприятие. Выберите удобный способ связи!</p>
+
+                    <div class="contact-methods">
+                        <div class="contact-method-card">
+                            <div class="contact-method-icon">📞</div>
+                            <h3>Телефон</h3>
+                            <a href="tel:+79622604324" class="contact-link">+7 (962) 260-43-24</a>
+                            <p>Звоните с 9:00 до 21:00 ежедневно</p>
+                        </div>
+
+                        <div class="contact-method-card">
+                            <div class="contact-method-icon">💬</div>
+                            <h3>WhatsApp</h3>
+                            <a href="https://wa.me/79622604324" class="contact-link">Написать в WhatsApp</a>
+                            <p>Быстрые ответы в мессенджере</p>
+                        </div>
+
+                        <div class="contact-method-card">
+                            <div class="contact-method-icon">✈️</div>
+                            <h3>Telegram</h3>
+                            <a href="https://t.me/+79622604324" class="contact-link">Написать в Telegram</a>
+                            <p>Онлайн консультации</p>
+                        </div>
+
+                        <div class="contact-method-card">
+                            <div class="contact-method-icon">📸</div>
+                            <h3>Instagram</h3>
+                            <a href="#" class="contact-link">@fortboyard_kaliningrad</a>
+                            <p>Фото и видео с мероприятий</p>
+                        </div>
+
+                        <div class="contact-method-card">
+                            <div class="contact-method-icon">👥</div>
+                            <h3>ВКонтакте</h3>
+                            <a href="#" class="contact-link">vk.com/fortboyard39</a>
+                            <p>Новости и акции</p>
+                        </div>
+
+                        <div class="contact-method-card">
+                            <div class="contact-method-icon">✉️</div>
+                            <h3>Email</h3>
+                            <a href="mailto:info@fortboyard39.ru" class="contact-link">info@fortboyard39.ru</a>
+                            <p>Для официальных запросов</p>
+                        </div>
+                    </div>
+
+                    <div class="location-info">
+                        <h2>Как нас найти</h2>
+                        <div class="location-details">
+                            <div class="location-item">
+                                <strong>📍 Адрес:</strong>
+                                <p>Калининград, ул. Ялтинская, д. 66</p>
+                            </div>
+                            <div class="location-item">
+                                <strong>🕐 Режим работы:</strong>
+                                <p>Ежедневно с 9:00 до 21:00</p>
+                            </div>
+                            <div class="location-item">
+                                <strong>🚗 Парковка:</strong>
+                                <p>Бесплатная парковка для гостей</p>
+                            </div>
+                            <div class="location-item">
+                                <strong>🚌 Общественный транспорт:</strong>
+                                <p>Остановка "Ялтинская" - автобусы № 12, 18, 44</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="map-container">
+                        <h3>Мы на карте</h3>
+                        <div class="map-placeholder">
+                            <p>🗺️ Интерактивная карта</p>
+                            <p class="map-note">Калининград, ул. Ялтинская, 66</p>
+                            <!-- Здесь можно вставить реальную карту через Яндекс.Карты или Google Maps -->
+                        </div>
+                    </div>
+
+                    <div class="faq-section">
+                        <h2>Частые вопросы</h2>
+                        <div class="faq-list">
+                            <div class="faq-item">
+                                <h4>❓ Сколько длится программа?</h4>
+                                <p>Стандартная программа Форт Боярд длится 2,5 часа и включает квест, встречу с животными и дискотеку.</p>
+                            </div>
+                            <div class="faq-item">
+                                <h4>❓ Какое минимальное количество участников?</h4>
+                                <p>Минимум 6 человек для детских праздников, максимум 55 человек.</p>
+                            </div>
+                            <div class="faq-item">
+                                <h4>❓ Можно ли принести свою еду?</h4>
+                                <p>Да, вы можете принести торт, напитки и легкие закуски. Также мы можем организовать кейтеринг.</p>
+                            </div>
+                            <div class="faq-item">
+                                <h4>❓ Нужно ли бронировать заранее?</h4>
+                                <p>Да, рекомендуем бронировать за 1-2 недели, особенно на выходные и праздничные дни.</p>
+                            </div>
+                            <div class="faq-item">
+                                <h4>❓ Безопасны ли испытания для детей?</h4>
+                                <p>Абсолютно безопасны! Все активности проходят под контролем опытных инструкторов.</p>
+                            </div>
+                            <div class="faq-item">
+                                <h4>❓ Могут ли родители присутствовать?</h4>
+                                <p>Да, для родителей есть специальная зона ожидания. По желанию можно участвовать вместе с детьми.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contacts-sidebar">
+                    <div class="sidebar-card quick-contact">
+                        <h3>Быстрая связь</h3>
+                        <a href="tel:+79622604324" class="btn btn-primary btn-block">
+                            📞 Позвонить сейчас
+                        </a>
+                        <a href="https://wa.me/79622604324" class="btn btn-outline btn-block">
+                            💬 WhatsApp
+                        </a>
+                        <a href="https://t.me/+79622604324" class="btn btn-outline btn-block">
+                            ✈️ Telegram
+                        </a>
+                    </div>
+
+                    <div class="sidebar-card working-hours">
+                        <h3>⏰ Режим работы</h3>
+                        <table class="hours-table">
+                            <tr>
+                                <td>Понедельник</td>
+                                <td>9:00 - 21:00</td>
+                            </tr>
+                            <tr>
+                                <td>Вторник</td>
+                                <td>9:00 - 21:00</td>
+                            </tr>
+                            <tr>
+                                <td>Среда</td>
+                                <td>9:00 - 21:00</td>
+                            </tr>
+                            <tr>
+                                <td>Четверг</td>
+                                <td>9:00 - 21:00</td>
+                            </tr>
+                            <tr>
+                                <td>Пятница</td>
+                                <td>9:00 - 21:00</td>
+                            </tr>
+                            <tr class="weekend">
+                                <td>Суббота</td>
+                                <td>9:00 - 21:00</td>
+                            </tr>
+                            <tr class="weekend">
+                                <td>Воскресенье</td>
+                                <td>9:00 - 21:00</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="sidebar-card social-card">
+                        <h3>Мы в соцсетях</h3>
+                        <div class="social-buttons">
+                            <a href="#" class="social-btn">
+                                <span>📸</span> Instagram
+                            </a>
+                            <a href="#" class="social-btn">
+                                <span>👥</span> ВКонтакте
+                            </a>
+                            <a href="#" class="social-btn">
+                                <span>📘</span> Facebook
+                            </a>
+                            <a href="#" class="social-btn">
+                                <span>🎬</span> YouTube
+                            </a>
+                        </div>
+                        <p class="social-note">Подписывайтесь, чтобы не пропустить акции и новости!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Form Section -->
+    <section id="order" class="order">
+        <div class="container">
+            <h2 class="section-title">Оставить Заявку</h2>
+            <p class="section-subtitle">Заполните форму и мы свяжемся с вами в ближайшее время</p>
+            <form class="order-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Ваше имя *" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="phone" placeholder="Телефон *" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <select name="event_type">
+                            <option value="">Тип мероприятия</option>
+                            <option value="birthday">День рождения</option>
+                            <option value="corporate">Корпоратив</option>
+                            <option value="graduation">Выпускной</option>
+                            <option value="other">Другое</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Ваш вопрос или комментарий" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn btn-large btn-primary">Отправить заявку</button>
+                <p class="form-privacy">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности</p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Форт Боярд Калининград. Все права защищены.</p>
+            <div class="social-links">
+                <a href="#" aria-label="WhatsApp">WhatsApp</a>
+                <a href="#" aria-label="Telegram">Telegram</a>
+                <a href="#" aria-label="Instagram">Instagram</a>
+                <a href="#" aria-label="VK">VK</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корпоративы - Форт Боярд Калининград</title>
+    <link rel="stylesheet" href="style.css?v=4">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="logo">ФОРТ БОЯРД</div>
+            <button class="menu-toggle" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="birthday.html">Дни рождения</a></li>
+                <li><a href="corporate.html" class="active">Корпоративы</a></li>
+                <li><a href="class-trip.html">Поход классом</a></li>
+                <li><a href="graduation.html">Выпускные</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <a href="#order" class="btn btn-primary">Заказать</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero hero-small">
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="assets/corporate-video.mp4" type="video/mp4">
+            <source src="assets/hero-video.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+            <h1 class="hero-title">Корпоративные<br>Мероприятия</h1>
+            <p class="hero-subtitle">Тимбилдинг в формате квеста для вашей команды</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="content-section">
+        <div class="container">
+            <div class="content-grid">
+                <div class="content-main">
+                    <h2>Тимбилдинг Форт Боярд</h2>
+                    <p>Укрепите командный дух вашей компании с помощью уникального квеста Форт Боярд! Это не просто развлечение, а эффективный инструмент для улучшения коммуникации и сплочения коллектива.</p>
+
+                    <h3>Что входит в программу:</h3>
+                    <ul class="features-list">
+                        <li>🎯 <strong>Командные испытания</strong> - задачи на логику, ловкость и сообразительность</li>
+                        <li>🤝 <strong>Тимбилдинг активности</strong> - упражнения на сплочение команды</li>
+                        <li>🐍 <strong>Экзотические животные</strong> - необычный опыт для всех участников</li>
+                        <li>🎊 <strong>Развлекательная программа</strong> - дискотека и конкурсы</li>
+                        <li>🍽️ <strong>Банкетная зона</strong> - возможность организации фуршета</li>
+                        <li>📊 <strong>Индивидуальный сценарий</strong> - адаптация под цели компании</li>
+                    </ul>
+
+                    <div class="highlight-box">
+                        <h3>Преимущества для бизнеса</h3>
+                        <div class="benefits-grid">
+                            <div class="benefit-item">
+                                <span class="benefit-icon">🤝</span>
+                                <h4>Сплочение команды</h4>
+                                <p>Совместное прохождение испытаний укрепляет доверие</p>
+                            </div>
+                            <div class="benefit-item">
+                                <span class="benefit-icon">💡</span>
+                                <h4>Развитие навыков</h4>
+                                <p>Коммуникация, лидерство, решение задач</p>
+                            </div>
+                            <div class="benefit-item">
+                                <span class="benefit-icon">🎉</span>
+                                <h4>Позитивные эмоции</h4>
+                                <p>Заряд мотивации для всего коллектива</p>
+                            </div>
+                            <div class="benefit-item">
+                                <span class="benefit-icon">📈</span>
+                                <h4>Выявление лидеров</h4>
+                                <p>Неформальная обстановка показывает потенциал сотрудников</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3>Форматы мероприятий:</h3>
+                    <div class="formats-grid">
+                        <div class="format-card">
+                            <h4>🎂 Корпоративный праздник</h4>
+                            <p>День компании, Новый год, профессиональные праздники</p>
+                        </div>
+                        <div class="format-card">
+                            <h4>🏆 Тимбилдинг</h4>
+                            <p>Сплочение отдела, адаптация новичков, объединение команд</p>
+                        </div>
+                        <div class="format-card">
+                            <h4>🎯 Бизнес-мероприятие</h4>
+                            <p>Завершение проекта, достижение целей, kickoff встречи</p>
+                        </div>
+                        <div class="format-card">
+                            <h4>🎊 Выездное мероприятие</h4>
+                            <p>Корпоратив вне офиса для сотрудников и партнеров</p>
+                        </div>
+                    </div>
+
+                    <h3>Программа мероприятия:</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-number">1</div>
+                            <div class="timeline-content">
+                                <h4>Встреча и деление на команды (15 мин)</h4>
+                                <p>Регистрация участников, формирование команд, инструктаж</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-number">2</div>
+                            <div class="timeline-content">
+                                <h4>Квест Форт Боярд (1,5 часа)</h4>
+                                <p>Командные испытания, загадки, сбор ключей и золота</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-number">3</div>
+                            <div class="timeline-content">
+                                <h4>Встреча с экзотическими животными (20 мин)</h4>
+                                <p>Интерактив с питонами, игуанами, фотосессия</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-number">4</div>
+                            <div class="timeline-content">
+                                <h4>Подведение итогов и награждение (15 мин)</h4>
+                                <p>Объявление победителей, вручение призов, фуршет</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-sidebar">
+                    <div class="sidebar-card">
+                        <h3>Стоимость</h3>
+                        <div class="price-box">
+                            <div class="price-label">От</div>
+                            <div class="price-value">15 000 ₽</div>
+                            <div class="price-description">за группу до 20 человек</div>
+                        </div>
+                        <ul class="price-includes">
+                            <li>✓ 2,5 часа программы</li>
+                            <li>✓ Все испытания и реквизит</li>
+                            <li>✓ Экзотические животные</li>
+                            <li>✓ Профессиональные ведущие</li>
+                            <li>✓ Призы командам</li>
+                        </ul>
+                        <a href="#order" class="btn btn-primary btn-block">Получить расчет</a>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3>Группы</h3>
+                        <ul class="group-info">
+                            <li><strong>Минимум:</strong> 6 человек</li>
+                            <li><strong>Максимум:</strong> 55 человек</li>
+                            <li><strong>Оптимально:</strong> 15-30 человек</li>
+                        </ul>
+                        <p class="note">При большем количестве участников возможна организация нескольких сессий</p>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3>Дополнительные услуги</h3>
+                        <ul class="additional-services">
+                            <li>🍽️ Кейтеринг и фуршет</li>
+                            <li>📷 Фото и видеосъемка</li>
+                            <li>🎁 Брендированные призы</li>
+                            <li>🎤 Звуковое оборудование</li>
+                            <li>🎨 Индивидуальный сценарий</li>
+                            <li>🚌 Трансфер участников</li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-card contact-card-sidebar">
+                        <h3>Нужна консультация?</h3>
+                        <p>Обсудим детали вашего мероприятия</p>
+                        <a href="tel:+79622604324" class="contact-phone">+7 (962) 260-43-24</a>
+                        <p class="contact-hours">Ежедневно 9:00-21:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Form Section -->
+    <section id="order" class="order">
+        <div class="container">
+            <h2 class="section-title">Заказать Корпоратив</h2>
+            <form class="order-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="company" placeholder="Название компании">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="tel" name="phone" placeholder="Телефон" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Email">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="number" name="guests" placeholder="Количество участников" min="6" max="55" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="date" name="date" placeholder="Желаемая дата">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Цели мероприятия и дополнительные пожелания" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn btn-large btn-primary">Отправить заявку</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Форт Боярд Калининград. Все права защищены.</p>
+            <div class="social-links">
+                <a href="#" aria-label="WhatsApp">WhatsApp</a>
+                <a href="#" aria-label="Telegram">Telegram</a>
+                <a href="#" aria-label="Instagram">Instagram</a>
+                <a href="#" aria-label="VK">VK</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выпускные - Форт Боярд Калининград</title>
+    <link rel="stylesheet" href="style.css?v=4">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="logo">ФОРТ БОЯРД</div>
+            <button class="menu-toggle" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="birthday.html">Дни рождения</a></li>
+                <li><a href="corporate.html">Корпоративы</a></li>
+                <li><a href="class-trip.html">Поход классом</a></li>
+                <li><a href="graduation.html" class="active">Выпускные</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <a href="#order" class="btn btn-primary">Заказать</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero hero-small">
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="assets/graduation-video.mp4" type="video/mp4">
+            <source src="assets/hero-video.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+            <h1 class="hero-title">Выпускной<br>в Форт Боярд</h1>
+            <p class="hero-subtitle">Незабываемый праздник для выпускников всех возрастов</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="content-section">
+        <div class="container">
+            <div class="content-grid">
+                <div class="content-main">
+                    <h2>Яркий Выпускной для Вашего Класса!</h2>
+                    <p>Выпускной - это особенный день, который запомнится на всю жизнь! Форт Боярд предлагает уникальную программу, которая объединит весь класс и подарит массу позитивных эмоций.</p>
+
+                    <h3>Программы для разных возрастов:</h3>
+                    <div class="age-programs">
+                        <div class="age-card">
+                            <h4>🎒 Начальная школа (4 класс)</h4>
+                            <p>Адаптированные испытания, больше игр и развлечений, акцент на веселье и командную работу</p>
+                        </div>
+                        <div class="age-card">
+                            <h4>📚 Средняя школа (9 класс)</h4>
+                            <p>Баланс между испытаниями и развлечениями, современная музыка, фотозоны</p>
+                        </div>
+                        <div class="age-card">
+                            <h4>🎓 Старшая школа (11 класс)</h4>
+                            <p>Более сложные испытания, стильная дискотека, возможность индивидуального оформления</p>
+                        </div>
+                    </div>
+
+                    <h3>Что входит в программу:</h3>
+                    <ul class="features-list">
+                        <li>🎮 <strong>Квест Форт Боярд</strong> - увлекательные командные испытания</li>
+                        <li>🐍 <strong>Экзотические животные</strong> - уникальное шоу с питонами, игуанами</li>
+                        <li>💃 <strong>Дискотека</strong> - зажигательные танцы с современной музыкой</li>
+                        <li>📸 <strong>Фотозона</strong> - яркие фото на память об этом дне</li>
+                        <li>🎁 <strong>Призы и дипломы</strong> - памятные подарки для всех выпускников</li>
+                        <li>🍰 <strong>Праздничная зона</strong> - место для угощений и отдыха</li>
+                    </ul>
+
+                    <div class="highlight-box">
+                        <h3>Почему Форт Боярд для выпускного?</h3>
+                        <div class="benefits-grid">
+                            <div class="benefit-item">
+                                <span class="benefit-icon">🎯</span>
+                                <h4>Всем интересно</h4>
+                                <p>Программа увлекает и активных, и спокойных детей</p>
+                            </div>
+                            <div class="benefit-item">
+                                <span class="benefit-icon">👥</span>
+                                <h4>Сплочение класса</h4>
+                                <p>Совместные испытания объединяют одноклассников</p>
+                            </div>
+                            <div class="benefit-item">
+                                <span class="benefit-icon">🎉</span>
+                                <h4>Яркие эмоции</h4>
+                                <p>Незабываемые впечатления и масса позитива</p>
+                            </div>
+                            <div class="benefit-item">
+                                <span class="benefit-icon">📱</span>
+                                <h4>Готовый контент</h4>
+                                <p>Множество крутых фото и видео для соцсетей</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3>Как проходит выпускной:</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-number">1</div>
+                            <div class="timeline-content">
+                                <h4>Встреча выпускников (15 мин)</h4>
+                                <p>Приветствие, деление на команды, инструктаж по безопасности</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-number">2</div>
+                            <div class="timeline-content">
+                                <h4>Приключения в Форт Боярд (1,5 часа)</h4>
+                                <p>Командные испытания, загадки старца Фура, сбор ключей и сокровищ</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-number">3</div>
+                            <div class="timeline-content">
+                                <h4>Шоу с экзотическими животными (20 мин)</h4>
+                                <p>Знакомство с удивительными животными, фотосессия</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-number">4</div>
+                            <div class="timeline-content">
+                                <h4>Дискотека и награждение (40 мин)</h4>
+                                <p>Зажигательные танцы, вручение дипломов, чаепитие</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3>Организация для родителей и учителей:</h3>
+                    <div class="info-box">
+                        <ul class="parents-info">
+                            <li>✓ Безопасность - все испытания под контролем опытных инструкторов</li>
+                            <li>✓ Удобство - мы берем всю организацию на себя</li>
+                            <li>✓ Фото и видео - возможность заказать профессиональную съемку</li>
+                            <li>✓ Питание - можем организовать фуршет или чаепитие</li>
+                            <li>✓ Родители могут присутствовать в специальной зоне ожидания</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="content-sidebar">
+                    <div class="sidebar-card">
+                        <h3>Стоимость</h3>
+                        <div class="price-box">
+                            <div class="price-label">От</div>
+                            <div class="price-value">12 000 ₽</div>
+                            <div class="price-description">за группу до 20 человек</div>
+                        </div>
+                        <ul class="price-includes">
+                            <li>✓ 2,5 часа программы</li>
+                            <li>✓ Квест Форт Боярд</li>
+                            <li>✓ Экзотические животные</li>
+                            <li>✓ Дискотека с DJ</li>
+                            <li>✓ Дипломы выпускникам</li>
+                            <li>✓ Памятные призы</li>
+                        </ul>
+                        <a href="#order" class="btn btn-primary btn-block">Заказать выпускной</a>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3>Вместимость</h3>
+                        <ul class="group-info">
+                            <li><strong>Минимум:</strong> 10 человек</li>
+                            <li><strong>Максимум:</strong> 55 человек</li>
+                            <li><strong>Оптимально:</strong> 20-30 человек (класс)</li>
+                        </ul>
+                        <p class="note">Для нескольких классов можем организовать несколько сессий в один день</p>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3>Дополнительные услуги</h3>
+                        <ul class="additional-services">
+                            <li>🍕 Организация питания</li>
+                            <li>📷 Профессиональная фотосъемка</li>
+                            <li>🎥 Видеосъемка и монтаж</li>
+                            <li>🎈 Оформление зала шарами</li>
+                            <li>🎂 Торт для класса</li>
+                            <li>🎁 Именные дипломы</li>
+                            <li>📀 Фотокнига выпуска</li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-card contact-card-sidebar">
+                        <h3>Планируете выпускной?</h3>
+                        <p>Звоните! Обсудим все детали</p>
+                        <a href="tel:+79622604324" class="contact-phone">+7 (962) 260-43-24</a>
+                        <p class="contact-hours">Ежедневно 9:00-21:00</p>
+                    </div>
+
+                    <div class="sidebar-card special-offer">
+                        <h3>🎁 Специальное предложение</h3>
+                        <p>При бронировании выпускного за 2 месяца - скидка 10%!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Form Section -->
+    <section id="order" class="order">
+        <div class="container">
+            <h2 class="section-title">Заказать Выпускной</h2>
+            <form class="order-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="phone" placeholder="Телефон" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" name="school" placeholder="Школа и класс" required>
+                    </div>
+                    <div class="form-group">
+                        <select name="grade" required>
+                            <option value="">Выберите класс</option>
+                            <option value="4">4 класс</option>
+                            <option value="9">9 класс</option>
+                            <option value="11">11 класс</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="number" name="students" placeholder="Количество учеников" min="10" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="date" name="date" placeholder="Желаемая дата" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Дополнительные пожелания и вопросы" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn btn-large btn-primary">Отправить заявку</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Форт Боярд Калининград. Все права защищены.</p>
+            <div class="social-links">
+                <a href="#" aria-label="WhatsApp">WhatsApp</a>
+                <a href="#" aria-label="Telegram">Telegram</a>
+                <a href="#" aria-label="Instagram">Instagram</a>
+                <a href="#" aria-label="VK">VK</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форт Боярд - Организация Мероприятий</title>
+    <link rel="stylesheet" href="style.css?v=4">
+</head>
+<body>
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Вернуться наверх">
+        <span>↑</span>
+    </button>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="logo">ФОРТ БОЯРД</div>
+            <button class="menu-toggle" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Главная</a></li>
+                <li><a href="birthday.html">Дни рождения</a></li>
+                <li><a href="corporate.html">Корпоративы</a></li>
+                <li><a href="class-trip.html">Поход классом</a></li>
+                <li><a href="graduation.html">Выпускные</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+                <span class="theme-icon">🌙</span>
+            </button>
+            <div class="header-actions">
+                <a href="tel:+79622604324" class="phone-link">+7 (962) 260-43-24</a>
+                <a href="#order" class="btn btn-primary btn-header">Заказать</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="assets/hero-video.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+            <h1 class="hero-title">Незабываемый праздник «под ключ» в формате знаменитого теле-шоу «Форт Боярд» в Калининграде!</h1>
+            <p class="hero-subtitle">Продолжительностью от 2,5 часов!</p>
+            <p class="hero-warning">Осторожно, у нас вы получите незабываемые эмоции и впечатления!</p>
+            <div class="hero-buttons">
+                <a href="#order" class="btn btn-large btn-primary">Рассчитать стоимость</a>
+                <a href="#services" class="btn btn-large btn-outline">Наши услуги</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Листайте вниз</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section">
+        <div class="container">
+            <h2 class="section-title">Наши Проекты</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-video">
+                        <video autoplay muted loop playsinline>
+                            <source src="assets/fort-boyard-video.mp4" type="video/mp4">
+                        </video>
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Форт Боярд</h3>
+                        <p>Незабываемое приключение в формате знаменитого телешоу</p>
+                        <a href="#services" class="btn btn-primary">Подробнее</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-video">
+                        <video autoplay muted loop playsinline>
+                            <source src="assets/krepost-video.mp4" type="video/mp4">
+                        </video>
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Крепость колдуна</h3>
+                        <p>Волшебное путешествие в мир магии и загадок</p>
+                        <a href="#" class="btn btn-primary" target="_blank" rel="noopener">Перейти на сайт</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Наши Услуги</h2>
+            <p class="section-subtitle">Уникальный формат праздников для детей и взрослых! С вас лишь повод – с нас невероятные эмоции и впечатления!</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🎂</div>
+                    <h3>Детские Дни Рождения</h3>
+                    <p>Незабываемый праздник для вашего ребенка в формате квест-шоу</p>
+                    <a href="birthday.html" class="service-link">Подробнее →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="assets/corporate-card.jpg" alt="Корпоративы в Форт Боярд">
+                    </div>
+                    <div class="service-icon">🏢</div>
+                    <h3>Корпоративы / Тимбилдинги</h3>
+                    <p>Уникальный формат вашего корпоратива на комфортной площадке, от 6-50 человек, испытайте себя и своих коллег!</p>
+                    <a href="corporate.html" class="service-link">Подробнее →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎓</div>
+                    <h3>Выпускные</h3>
+                    <p>Яркая программа «под ключ» для вашего выпускного, который точно запомнится надолго!</p>
+                    <a href="graduation.html" class="service-link">Подробнее →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎒</div>
+                    <h3>Походы классом</h3>
+                    <p>Организуем невероятный поход для вашего класса в формате знаменитого квест-шоу!</p>
+                    <a href="class-trip.html" class="service-link">Подробнее →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Events Section -->
+    <section class="other-events">
+        <div class="container">
+            <p class="other-events-text">
+                Также проводим: <strong>Свадьбы</strong>, <strong>Семейные праздники</strong>, <strong>Девичники/Мальчишники</strong>,
+                <strong>Квесты для друзей</strong> и любые другие мероприятия!
+            </p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Посмотрите, как проходят наши праздники</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                    <div class="gallery-overlay">
+                        <h3>Корпоратив 2024</h3>
+                        <p>150 участников</p>
+                    </div>
+                </div>
+                <div class="gallery-item" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                    <div class="gallery-overlay">
+                        <h3>Выпускной</h3>
+                        <p>200 гостей</p>
+                    </div>
+                </div>
+                <div class="gallery-item" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                    <div class="gallery-overlay">
+                        <h3>Квест-игра</h3>
+                        <p>80 участников</p>
+                    </div>
+                </div>
+                <div class="gallery-item" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                    <div class="gallery-overlay">
+                        <h3>День рождения</h3>
+                        <p>50 гостей</p>
+                    </div>
+                </div>
+                <div class="gallery-item" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                    <div class="gallery-overlay">
+                        <h3>Тимбилдинг</h3>
+                        <p>100 участников</p>
+                    </div>
+                </div>
+                <div class="gallery-item" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
+                    <div class="gallery-overlay">
+                        <h3>Свадьба</h3>
+                        <p>120 гостей</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facts Section -->
+    <section id="facts" class="about">
+        <div class="container">
+            <h2 class="section-title">Несколько интересных фактов о нас</h2>
+            <div class="facts-grid">
+                <div class="stat-card">
+                    <div class="stat-number">3000+</div>
+                    <div class="stat-label">Мы провели более 3.000 праздников за 5 лет!</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">400</div>
+                    <div class="stat-label">м² общая площадь наших локаций в Калининграде</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">2.5</div>
+                    <div class="stat-label">часа средняя продолжительность вашего праздника</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🎉</div>
+                    <div class="stat-label">Проводим торжественную часть и дискотеку на каждом нашем празднике</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Adventure Section -->
+    <section class="adventure-section">
+        <div class="container">
+            <h2 class="section-title">Почувствуйте себя героем настоящего приключения</h2>
+            <p class="section-subtitle-dark">Благодаря тщательно продуманному реквизиту и декорациям</p>
+
+            <div class="gallery-slider">
+                <button class="gallery-nav gallery-prev" aria-label="Предыдущий слайд">‹</button>
+                <button class="gallery-nav gallery-next" aria-label="Следующий слайд">›</button>
+
+                <div class="gallery-track">
+                    <div class="gallery-slides-wrapper">
+                        <div class="gallery-slide">
+                            <div class="gallery-slide-content">
+                                <div class="gallery-slide-icon">📐</div>
+                                <h3>Площадка более 300 м²</h3>
+                                <p>Просторные локации для комфортного проведения мероприятий</p>
+                            </div>
+                        </div>
+                        <div class="gallery-slide">
+                            <div class="gallery-slide-content">
+                                <div class="gallery-slide-icon">🦎</div>
+                                <h3>Настоящие экзотические животные</h3>
+                                <p>Питоны, игуаны, еноты - уникальный опыт для всех участников</p>
+                            </div>
+                        </div>
+                        <div class="gallery-slide">
+                            <div class="gallery-slide-content">
+                                <div class="gallery-slide-icon">👕</div>
+                                <h3>Фирменные футболки для каждого игрока</h3>
+                                <p>Памятный сувенир с вашего приключения</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-dots">
+                    <button class="gallery-dot active" data-slide="0" aria-label="Слайд 1"></button>
+                    <button class="gallery-dot" data-slide="1" aria-label="Слайд 2"></button>
+                    <button class="gallery-dot" data-slide="2" aria-label="Слайд 3"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Challenges Section -->
+    <section class="challenges-section">
+        <div class="container">
+            <h2 class="section-title">Вас ждут испытания в точности, как в известном шоу</h2>
+            <div class="highlight-box">
+                <h3>🎯 Гарант хорошего настроения</h3>
+                <p>Мы старательно подготавливаем задания под каждый возраст. У нас нет ограничений, будет интересно всем!</p>
+                <a href="#calculator" class="btn btn-primary btn-large">Рассчитать стоимость</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- After Show Section -->
+    <section class="after-show-section">
+        <div class="container">
+            <h2 class="section-title">После шоу веселье не заканчивается!</h2>
+            <p class="section-subtitle-dark">Еще полчаса участников развлекают профессиональные ведущие</p>
+            <div class="after-show-grid">
+                <div class="after-show-card">
+                    <div class="after-show-icon">🎵</div>
+                    <h3>Зажигательные дискотеки с диджеем</h3>
+                    <p>Современная музыка и танцы для всех возрастов</p>
+                </div>
+                <div class="after-show-card">
+                    <div class="after-show-icon">🎂</div>
+                    <h3>Торжественная часть с поздравлениями</h3>
+                    <p>Вручение призов, поздравления именинника</p>
+                </div>
+                <div class="after-show-card">
+                    <div class="after-show-icon">📸</div>
+                    <h3>Фотосессия в фотозонах</h3>
+                    <p>Яркие фото на память о вашем празднике</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Часто задаваемые вопросы</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Что из себя представляет ваша программа мероприятия?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Мероприятие состоит из 3 этапов: соревновательный квест с разделением на команды, банкетный зал для праздника и дискотека с диджеем.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Сколько длится мероприятие?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Стандартное время 2,5 часа: полтора часа квест и час на празднование и дискотеку.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Есть ли возможность продления мероприятия?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, возможно продление от получаса, но лучше договариваться заранее.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Сколько человек может принимать участие?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>От 6 до 55 человек. Чем больше участников, тем интереснее.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Что нужно брать с собой на мероприятие?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Хорошую компанию, настроение и сменную обувь. Остальное предоставят организаторы.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Может ли в одном квесте принимать участие компания с разными возрастами?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, программа гибкая и рассчитана на любой возраст.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews-section">
+        <div class="container">
+            <h2 class="section-title">Отзывы наших клиентов</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">А</div>
+                        <div class="review-author">
+                            <h4>Анна Петрова</h4>
+                            <div class="review-rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <p class="review-text">Отмечали день рождения сына. Дети в восторге! Квест очень интересный, ведущие профессиональные, животные настоящие. Спасибо за незабываемый праздник!</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">Д</div>
+                        <div class="review-author">
+                            <h4>Дмитрий Иванов</h4>
+                            <div class="review-rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <p class="review-text">Проводили корпоратив для команды из 30 человек. Все остались довольны! Отличный тимбилдинг, сплотили коллектив. Рекомендуем!</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">Е</div>
+                        <div class="review-author">
+                            <h4>Елена Смирнова</h4>
+                            <div class="review-rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <p class="review-text">Организовывали выпускной для 9 класса. Дети были в восторге! Все продумано до мелочей. Большое спасибо организаторам!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Form Section -->
+    <section id="order" class="order">
+        <div class="container">
+            <h2 class="section-title">Оставить Заявку</h2>
+            <form class="order-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Телефон" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <select required>
+                            <option value="">Тип мероприятия</option>
+                            <option value="graduation">Выпускной</option>
+                            <option value="corporate">Корпоратив</option>
+                            <option value="birthday">День рождения</option>
+                            <option value="wedding">Свадьба</option>
+                            <option value="quest">Квест</option>
+                            <option value="other">Другое</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Комментарий" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn btn-large btn-primary">Отправить заявку</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contacts Section -->
+    <section id="contacts" class="contacts">
+        <div class="container">
+            <h2 class="section-title">Контакты</h2>
+            <div class="contacts-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">📞</div>
+                    <h3>Телефон</h3>
+                    <a href="tel:+79622604324">+7 (962) 260-43-24</a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">🕐</div>
+                    <h3>Режим работы</h3>
+                    <p>Ежедневно 9:00-21:00</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <h3>Адрес</h3>
+                    <p>Калининград, ул. Ялтинская, 66</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">Как нас найти</h2>
+            <div class="map-info-grid">
+                <div class="map-details">
+                    <div class="map-detail-card">
+                        <div class="map-icon">📍</div>
+                        <div>
+                            <h3>Наш адрес</h3>
+                            <p>Калининград, ул. Ялтинская, 66</p>
+                        </div>
+                    </div>
+                    <div class="map-detail-card">
+                        <div class="map-icon">🚗</div>
+                        <div>
+                            <h3>Как добраться</h3>
+                            <p>Удобная парковка, остановка общественного транспорта рядом</p>
+                        </div>
+                    </div>
+                    <div class="map-detail-card">
+                        <div class="map-icon">🕐</div>
+                        <div>
+                            <h3>Режим работы</h3>
+                            <p>Ежедневно с 9:00 до 21:00</p>
+                        </div>
+                    </div>
+                    <div class="map-detail-card">
+                        <div class="map-icon">📞</div>
+                        <div>
+                            <h3>Позвонить нам</h3>
+                            <p><a href="tel:+79622604324" style="color: var(--primary-color); font-weight: 600;">+7 (962) 260-43-24</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <div style="position:relative;overflow:hidden;height:100%;">
+                        <a href="https://yandex.ru/maps/22/kaliningrad/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Калининград</a>
+                        <a href="https://yandex.ru/maps/22/kaliningrad/?ll=20.501739%2C54.723844&mode=search&text=Калининград%2C%20ул.%20Ялтинская%2C%2066&z=17" style="color:#eee;font-size:12px;position:absolute;top:14px;">Калининград, ул. Ялтинская, 66 — Яндекс Карты</a>
+                        <iframe src="https://yandex.ru/map-widget/v1/?ll=20.501739%2C54.723844&mode=search&text=Калининград%2C%20ул.%20Ялтинская%2C%2066&z=17" width="100%" height="100%" frameborder="0" allowfullscreen="true" style="position:relative;border-radius:12px;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Форт Боярд Калининград. Все права защищены.</p>
+            <div class="social-links">
+                <a href="#" aria-label="WhatsApp">WhatsApp</a>
+                <a href="#" aria-label="Telegram">Telegram</a>
+                <a href="#" aria-label="Instagram">Instagram</a>
+                <a href="#" aria-label="VK">VK</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky CTA Button (Mobile Only) -->
+    <div class="sticky-cta" id="stickyCta">
+        <a href="#order" class="btn btn-primary">Заказать праздник</a>
+    </div>
+
+    <script src="script.js?v=5"></script>
+</body>
+</html>

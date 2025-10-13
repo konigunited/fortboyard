@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(netstat:*)",
+      "Bash(node server.js)",
+      "Bash(awk:*)",
+      "Bash(echo:*)",
+      "Bash(where python)",
+      "Bash(powershell:*)",
+      "Bash(cp:*)",
+      "Bash(ipconfig)",
+      "Bash(python:*)",
+      "Bash(ls:*)",
+      "WebFetch(domain:yandex.ru)",
+      "Bash(dir \"C:\\Users\\F12$\\Desktop\\ПРОГИ\\работа\\форт боярд\\assets\")",
+      "Bash(findstr:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

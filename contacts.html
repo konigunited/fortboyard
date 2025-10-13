@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Форт Боярд Калининград</title>
+    <link rel="stylesheet" href="style.css?v=4">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="logo">ФОРТ БОЯРД</div>
+            <button class="menu-toggle" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="birthday.html">Дни рождения</a></li>
+                <li><a href="corporate.html">Корпоративы</a></li>
+                <li><a href="class-trip.html">Поход классом</a></li>
+                <li><a href="graduation.html">Выпускные</a></li>
+                <li><a href="contacts.html" class="active">Контакты</a></li>
+            </ul>
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <a href="#order" class="btn btn-primary">Заказать</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero hero-small">
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="assets/contacts-video.mp4" type="video/mp4">
+            <source src="assets/hero-video.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+            <h1 class="hero-title">Контакты</h1>
+            <p class="hero-subtitle">Свяжитесь с нами удобным способом</p>
+        </div>
+    </section>
+
+    <!-- Contacts Content -->
+    <section class="content-section">
+        <div class="container">
+            <div class="contacts-page-grid">
+                <div class="contacts-main">
+                    <h2>Как с нами связаться</h2>
+                    <p>Мы всегда рады ответить на ваши вопросы и помочь организовать незабываемое мероприятие. Выберите удобный способ связи!</p>
+
+                    <div class="contact-methods">
+                        <div class="contact-method-card">
+                            <div class="contact-method-icon">📞</div>
+                            <h3>Телефон</h3>
+                            <a href="tel:+79622604324" class="contact-link">+7 (962) 260-43-24</a>
+                            <p>Звоните с 9:00 до 21:00 ежедневно</p>
+                        </div>
+
+                        <div class="contact-method-card">
+                            <div class="contact-method-icon">💬</div>
+                            <h3>WhatsApp</h3>
+                            <a href="https://wa.me/79622604324" class="contact-link">Написать в WhatsApp</a>
+                            <p>Быстрые ответы в мессенджере</p>
+                        </div>
+
+                        <div class="contact-method-card">
+                            <div class="contact-method-icon">✈️</div>
+                            <h3>Telegram</h3>
+                            <a href="https://t.me/+79622604324" class="contact-link">Написать в Telegram</a>
+                            <p>Онлайн консультации</p>
+                        </div>
+
+                        <div class="contact-method-card">
+                            <div class="contact-method-icon">📸</div>
+                            <h3>Instagram</h3>
+                            <a href="#" class="contact-link">@fortboyard_kaliningrad</a>
+                            <p>Фото и видео с мероприятий</p>
+                        </div>
+
+                        <div class="contact-method-card">
+                            <div class="contact-method-icon">👥</div>
+                            <h3>ВКонтакте</h3>
+                            <a href="#" class="contact-link">vk.com/fortboyard39</a>
+                            <p>Новости и акции</p>
+                        </div>
+
+                        <div class="contact-method-card">
+                            <div class="contact-method-icon">✉️</div>
+                            <h3>Email</h3>
+                            <a href="mailto:info@fortboyard39.ru" class="contact-link">info@fortboyard39.ru</a>
+                            <p>Для официальных запросов</p>
+                        </div>
+                    </div>
+
+                    <div class="location-info">
+                        <h2>Как нас найти</h2>
+                        <div class="location-details">
+                            <div class="location-item">
+                                <strong>📍 Адрес:</strong>
+                                <p>Калининград, ул. Ялтинская, д. 66</p>
+                            </div>
+                            <div class="location-item">
+                                <strong>🕐 Режим работы:</strong>
+                                <p>Ежедневно с 9:00 до 21:00</p>
+                            </div>
+                            <div class="location-item">
+                                <strong>🚗 Парковка:</strong>
+                                <p>Бесплатная парковка для гостей</p>
+                            </div>
+                            <div class="location-item">
+                                <strong>🚌 Общественный транспорт:</strong>
+                                <p>Остановка "Ялтинская" - автобусы № 12, 18, 44</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="map-container">
+                        <h3>Мы на карте</h3>
+                        <div class="map-placeholder">
+                            <p>🗺️ Интерактивная карта</p>
+                            <p class="map-note">Калининград, ул. Ялтинская, 66</p>
+                            <!-- Здесь можно вставить реальную карту через Яндекс.Карты или Google Maps -->
+                        </div>
+                    </div>
+
+                    <div class="faq-section">
+                        <h2>Частые вопросы</h2>
+                        <div class="faq-list">
+                            <div class="faq-item">
+                                <h4>❓ Сколько длится программа?</h4>
+                                <p>Стандартная программа Форт Боярд длится 2,5 часа и включает квест, встречу с животными и дискотеку.</p>
+                            </div>
+                            <div class="faq-item">
+                                <h4>❓ Какое минимальное количество участников?</h4>
+                                <p>Минимум 6 человек для детских праздников, максимум 55 человек.</p>
+                            </div>
+                            <div class="faq-item">
+                                <h4>❓ Можно ли принести свою еду?</h4>
+                                <p>Да, вы можете принести торт, напитки и легкие закуски. Также мы можем организовать кейтеринг.</p>
+                            </div>
+                            <div class="faq-item">
+                                <h4>❓ Нужно ли бронировать заранее?</h4>
+                                <p>Да, рекомендуем бронировать за 1-2 недели, особенно на выходные и праздничные дни.</p>
+                            </div>
+                            <div class="faq-item">
+                                <h4>❓ Безопасны ли испытания для детей?</h4>
+                                <p>Абсолютно безопасны! Все активности проходят под контролем опытных инструкторов.</p>
+                            </div>
+                            <div class="faq-item">
+                                <h4>❓ Могут ли родители присутствовать?</h4>
+                                <p>Да, для родителей есть специальная зона ожидания. По желанию можно участвовать вместе с детьми.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contacts-sidebar">
+                    <div class="sidebar-card quick-contact">
+                        <h3>Быстрая связь</h3>
+                        <a href="tel:+79622604324" class="btn btn-primary btn-block">
+                            📞 Позвонить сейчас
+                        </a>
+                        <a href="https://wa.me/79622604324" class="btn btn-outline btn-block">
+                            💬 WhatsApp
+                        </a>
+                        <a href="https://t.me/+79622604324" class="btn btn-outline btn-block">
+                            ✈️ Telegram
+                        </a>
+                    </div>
+
+                    <div class="sidebar-card working-hours">
+                        <h3>⏰ Режим работы</h3>
+                        <table class="hours-table">
+                            <tr>
+                                <td>Понедельник</td>
+                                <td>9:00 - 21:00</td>
+                            </tr>
+                            <tr>
+                                <td>Вторник</td>
+                                <td>9:00 - 21:00</td>
+                            </tr>
+                            <tr>
+                                <td>Среда</td>
+                                <td>9:00 - 21:00</td>
+                            </tr>
+                            <tr>
+                                <td>Четверг</td>
+                                <td>9:00 - 21:00</td>
+                            </tr>
+                            <tr>
+                                <td>Пятница</td>
+                                <td>9:00 - 21:00</td>
+                            </tr>
+                            <tr class="weekend">
+                                <td>Суббота</td>
+                                <td>9:00 - 21:00</td>
+                            </tr>
+                            <tr class="weekend">
+                                <td>Воскресенье</td>
+                                <td>9:00 - 21:00</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="sidebar-card social-card">
+                        <h3>Мы в соцсетях</h3>
+                        <div class="social-buttons">
+                            <a href="#" class="social-btn">
+                                <span>📸</span> Instagram
+                            </a>
+                            <a href="#" class="social-btn">
+                                <span>👥</span> ВКонтакте
+                            </a>
+                            <a href="#" class="social-btn">
+                                <span>📘</span> Facebook
+                            </a>
+                            <a href="#" class="social-btn">
+                                <span>🎬</span> YouTube
+                            </a>
+                        </div>
+                        <p class="social-note">Подписывайтесь, чтобы не пропустить акции и новости!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Form Section -->
+    <section id="order" class="order">
+        <div class="container">
+            <h2 class="section-title">Оставить Заявку</h2>
+            <p class="section-subtitle">Заполните форму и мы свяжемся с вами в ближайшее время</p>
+            <form class="order-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Ваше имя *" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="phone" placeholder="Телефон *" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <select name="event_type">
+                            <option value="">Тип мероприятия</option>
+                            <option value="birthday">День рождения</option>
+                            <option value="corporate">Корпоратив</option>
+                            <option value="graduation">Выпускной</option>
+                            <option value="other">Другое</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Ваш вопрос или комментарий" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn btn-large btn-primary">Отправить заявку</button>
+                <p class="form-privacy">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности</p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Форт Боярд Калининград. Все права защищены.</p>
+            <div class="social-links">
+                <a href="#" aria-label="WhatsApp">WhatsApp</a>
+                <a href="#" aria-label="Telegram">Telegram</a>
+                <a href="#" aria-label="Instagram">Instagram</a>
+                <a href="#" aria-label="VK">VK</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
