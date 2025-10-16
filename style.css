@@ -1805,6 +1805,22 @@ section {
     opacity: 0.9;
 }
 
+/* CTA Box (for individual pricing message) */
+.cta-box {
+    text-align: center;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: 12px;
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.cta-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    opacity: 0.95;
+}
+
 .price-includes {
     list-style: none;
     margin: 1rem 0;
@@ -3149,6 +3165,18 @@ section {
     line-height: 1.7;
     margin: 0;
     font-size: 1.125rem;
+}
+
+/* Yandex Reviews Widget */
+.yandex-reviews-widget {
+    margin-top: 2rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.yandex-reviews-widget iframe {
+    display: block;
+    margin: 0 auto;
 }
 
 /* Map Section */
