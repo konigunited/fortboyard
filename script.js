@@ -310,6 +310,122 @@ if (gallerySlider) {
     }
 }
 
+// Yandex Reviews Slider
+const yandexReviewsSlider = document.querySelector('#yandexReviewsSlider');
+
+if (yandexReviewsSlider) {
+    const track = yandexReviewsSlider.querySelector('.yandex-reviews-track');
+    const cards = Array.from(track.querySelectorAll('.yandex-review-card'));
+    const prevButton = yandexReviewsSlider.querySelector('.yandex-reviews-prev');
+    const nextButton = yandexReviewsSlider.querySelector('.yandex-reviews-next');
+    const currentCounter = yandexReviewsSlider.querySelector('#yandexReviewsCurrent');
+    const totalCounter = yandexReviewsSlider.querySelector('#yandexReviewsTotal');
+    const slidesTotal = cards.length;
+    let currentIndex = 0;
+    let startX = 0;
+    let isDragging = false;
+
+    if (totalCounter) {
+        totalCounter.textContent = slidesTotal;
+    }
+
+    const getStep = () => {
+        if (!cards.length) {
+            return 0;
+        }
+        const cardWidth = cards[0].getBoundingClientRect().width;
+        const styles = window.getComputedStyle(track);
+        const gap = parseFloat(styles.columnGap || styles.gap || '0');
+        return cardWidth + gap;
+    };
+
+    const updateSlider = ({ animate = true } = {}) => {
+        const step = getStep();
+        if (step === 0) {
+            return;
+        }
+
+        if (!animate) {
+            track.style.transition = 'none';
+        } else {
+            track.style.transition = 'transform 0.5s ease';
+        }
+
+        track.style.transform = `translateX(-${currentIndex * step}px)`;
+
+        if (currentCounter) {
+            currentCounter.textContent = currentIndex + 1;
+        }
+        if (prevButton) {
+            prevButton.disabled = currentIndex === 0;
+        }
+        if (nextButton) {
+            nextButton.disabled = currentIndex === slidesTotal - 1;
+        }
+
+        if (!animate) {
+            requestAnimationFrame(() => {
+                track.style.transition = '';
+            });
+        }
+    };
+
+    const goToSlide = (index) => {
+        const target = Math.min(Math.max(index, 0), slidesTotal - 1);
+        if (target === currentIndex) {
+            updateSlider();
+            return;
+        }
+        currentIndex = target;
+        updateSlider();
+    };
+
+    prevButton?.addEventListener('click', () => {
+        goToSlide(currentIndex - 1);
+    });
+
+    nextButton?.addEventListener('click', () => {
+        goToSlide(currentIndex + 1);
+    });
+
+    window.addEventListener('resize', () => updateSlider({ animate: false }));
+
+    track.addEventListener('touchstart', (event) => {
+        if (event.touches.length !== 1) {
+            return;
+        }
+        isDragging = true;
+        startX = event.touches[0].clientX;
+    }, { passive: true });
+
+    const handleSwipe = (delta) => {
+        if (Math.abs(delta) < 40) {
+            updateSlider();
+            return;
+        }
+        if (delta < 0) {
+            goToSlide(currentIndex + 1);
+        } else {
+            goToSlide(currentIndex - 1);
+        }
+    };
+
+    track.addEventListener('touchend', (event) => {
+        if (!isDragging) {
+            return;
+        }
+        const delta = event.changedTouches[0].clientX - startX;
+        handleSwipe(delta);
+        isDragging = false;
+    });
+
+    track.addEventListener('touchcancel', () => {
+        isDragging = false;
+    });
+
+    updateSlider({ animate: false });
+}
+
 // Mobile Menu Toggle
 const menuToggle = document.querySelector('.menu-toggle');
 const navMenu = document.querySelector('.nav-menu');
