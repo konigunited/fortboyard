@@ -3613,22 +3613,46 @@ section {
     display: grid;
     grid-template-columns: minmax(0, 2fr) minmax(260px, 1fr);
     gap: 2rem;
-    align-items: stretch;
+    align-items: flex-start;
     margin-top: 3rem;
 }
 
+.yandex-reviews-widget {
+    width: 100%;
+    max-height: 520px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: 18px;
+    box-shadow: 0 10px 32px rgba(15, 23, 42, 0.15);
+    background: #ffffff;
+}
+
+.yandex-reviews-widget iframe {
+    display: block;
+    width: 100%;
+    min-height: 900px;
+    border: none;
+    border-radius: 18px;
+}
+
 .yandex-review-badge {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 240, 200, 0.9) 100%);
-    border: 1px solid rgba(255, 192, 1, 0.4);
-    border-radius: 20px;
-    box-shadow: 0 12px 30px rgba(255, 192, 1, 0.25);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.96) 0%, rgba(255, 236, 179, 0.92) 100%);
+    border: 1px solid rgba(255, 192, 1, 0.45);
+    border-radius: 22px;
+    box-shadow: 0 16px 40px rgba(255, 192, 1, 0.25);
     padding: 2.5rem 2rem;
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
     text-align: center;
     position: sticky;
-    top: 90px;
+    top: 100px;
+}
+
+.badge-logo {
+    width: 120px;
+    height: auto;
+    align-self: center;
 }
 
 .badge-icon {
@@ -3637,7 +3661,7 @@ section {
 }
 
 .badge-title {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 700;
     color: #1f2937;
 }
@@ -3647,10 +3671,16 @@ section {
     line-height: 1.6;
 }
 
+.badge-rating {
+    font-size: 1.35rem;
+    letter-spacing: 0.15em;
+    color: #ffbb00;
+}
+
 .badge-link {
     display: inline-flex;
     align-self: center;
-    padding: 0.75rem 1.75rem;
+    padding: 0.75rem 1.85rem;
     border-radius: 999px;
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     color: #fff;
@@ -3661,7 +3691,7 @@ section {
 
 .badge-link:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(255, 192, 1, 0.45);
+    box-shadow: 0 10px 25px rgba(255, 192, 1, 0.35);
 }
 
 @media (max-width: 1024px) {
@@ -3675,8 +3705,12 @@ section {
 }
 
 @media (max-width: 640px) {
-    .yandex-review-бadge {
+    .yandex-review-badge {
         padding: 2rem 1.5rem;
+    }
+
+    .yandex-reviews-widget {
+        max-height: 420px;
     }
 }
 
@@ -4099,6 +4133,9 @@ section {
         font-size: 1.2rem;
     }
 }
+
+
+
 
 
 
