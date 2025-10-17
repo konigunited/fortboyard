@@ -1468,66 +1468,66 @@ section {
 }
 
 .floating-photo-left--large {
-    top: 20%;
+    top: -40px;
     left: -250px;
-    transform: translateY(-50%) rotate(-4deg);
+    transform: rotate(-8deg);
     animation: floatPhotoLeftLarge 11s ease-in-out infinite;
 }
 
 .floating-photo-right--large {
-    top: 32%;
+    top: 60px;
     right: -260px;
-    transform: translateY(-50%) rotate(4deg);
+    transform: rotate(7deg);
     animation: floatPhotoRightLarge 11s ease-in-out infinite;
 }
 
 .floating-photo-left--small {
-    top: 70%;
+    bottom: 80px;
     left: -190px;
-    transform: translateY(-50%) rotate(-7deg);
+    transform: rotate(-6deg);
     animation: floatPhotoLeftSmall 7s ease-in-out infinite;
 }
 
 .floating-photo-right--small {
-    top: 84%;
+    bottom: 10px;
     right: -190px;
-    transform: translateY(-50%) rotate(7deg);
+    transform: rotate(6deg);
     animation: floatPhotoRightSmall 7s ease-in-out infinite;
 }
 
 @keyframes floatPhotoLeftLarge {
     0%, 100% {
-        transform: translateY(-50%) rotate(-4deg);
+        transform: translateY(0) rotate(-8deg);
     }
     50% {
-        transform: translateY(-64%) rotate(-1deg);
+        transform: translateY(-18px) rotate(-4deg);
     }
 }
 
 @keyframes floatPhotoRightLarge {
     0%, 100% {
-        transform: translateY(-50%) rotate(4deg);
+        transform: translateY(0) rotate(7deg);
     }
     50% {
-        transform: translateY(-36%) rotate(1deg);
+        transform: translateY(-16px) rotate(3deg);
     }
 }
 
 @keyframes floatPhotoLeftSmall {
     0%, 100% {
-        transform: translateY(-50%) rotate(-7deg);
+        transform: translateY(0) rotate(-6deg);
     }
     50% {
-        transform: translateY(-62%) rotate(-3deg);
+        transform: translateY(-14px) rotate(-2deg);
     }
 }
 
 @keyframes floatPhotoRightSmall {
     0%, 100% {
-        transform: translateY(-50%) rotate(7deg);
+        transform: translateY(0) rotate(6deg);
     }
     50% {
-        transform: translateY(-38%) rotate(3deg);
+        transform: translateY(-12px) rotate(2deg);
     }
 }
 
