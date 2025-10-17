@@ -1468,28 +1468,28 @@ section {
 }
 
 .floating-photo-left--large {
-    top: 25%;
+    top: 20%;
     left: -250px;
     transform: translateY(-50%) rotate(-4deg);
     animation: floatPhotoLeftLarge 11s ease-in-out infinite;
 }
 
 .floating-photo-right--large {
-    top: 35%;
+    top: 32%;
     right: -260px;
     transform: translateY(-50%) rotate(4deg);
     animation: floatPhotoRightLarge 11s ease-in-out infinite;
 }
 
 .floating-photo-left--small {
-    top: 60%;
+    top: 70%;
     left: -190px;
     transform: translateY(-50%) rotate(-7deg);
     animation: floatPhotoLeftSmall 7s ease-in-out infinite;
 }
 
 .floating-photo-right--small {
-    top: 72%;
+    top: 84%;
     right: -190px;
     transform: translateY(-50%) rotate(7deg);
     animation: floatPhotoRightSmall 7s ease-in-out infinite;
