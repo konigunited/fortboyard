@@ -108,10 +108,16 @@
             <div class="projects-grid">
                 <div class="project-card fort-card">
                     <div class="project-video">
-                        <video muted loop playsinline class="fort-video lazy-video" loading="lazy" preload="none" data-src="assets/IMG_9980.MP4">
+                        <video muted playsinline class="project-video-element" preload="none" data-src="assets/IMG_9980.MP4">
                             <source data-src="assets/IMG_9980.MP4" type="video/mp4">
                         </video>
                         <div class="project-overlay"></div>
+                        <button class="project-play-btn" aria-label="Воспроизвести видео">
+                            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="32" cy="32" r="32" fill="rgba(255, 255, 255, 0.9)"/>
+                                <path d="M26 20L46 32L26 44V20Z" fill="#ffc001"/>
+                            </svg>
+                        </button>
                     </div>
                     <div class="project-content">
                         <h3>Форт Боярд</h3>
@@ -121,15 +127,40 @@
                 </div>
                 <div class="project-card krepost-card">
                     <div class="project-video">
-                        <video muted loop playsinline class="krepost-video lazy-video" loading="lazy" preload="none" data-src="assets/krepost-video.mp4?v=4">
+                        <video muted playsinline class="project-video-element" preload="none" data-src="assets/krepost-video.mp4?v=4">
                             <source data-src="assets/krepost-video.mp4?v=4" type="video/mp4">
                         </video>
                         <div class="project-overlay"></div>
+                        <button class="project-play-btn" aria-label="Воспроизвести видео">
+                            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="32" cy="32" r="32" fill="rgba(255, 255, 255, 0.9)"/>
+                                <path d="M26 20L46 32L26 44V20Z" fill="#ffc001"/>
+                            </svg>
+                        </button>
                     </div>
                     <div class="project-content">
                         <h3>Крепость колдуна</h3>
                         <p>Волшебное путешествие в мир магии и загадок для детей от 6 лет.<br>Квест с настоящими животными, зажигательной дискотекой и незабываемыми испытаниями!</p>
                         <a href="https://krepost-kolduna.ru/" class="btn btn-primary" target="_blank" rel="noopener">Перейти на сайт</a>
+                    </div>
+                </div>
+                <div class="project-card evento-card">
+                    <div class="project-video">
+                        <video muted playsinline class="project-video-element" preload="none" data-src="assets/hero-video.mp4?v=4">
+                            <source data-src="assets/hero-video.mp4?v=4" type="video/mp4">
+                        </video>
+                        <div class="project-overlay"></div>
+                        <button class="project-play-btn" aria-label="Воспроизвести видео">
+                            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="32" cy="32" r="32" fill="rgba(255, 255, 255, 0.9)"/>
+                                <path d="M26 20L46 32L26 44V20Z" fill="#ffc001"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="project-content">
+                        <h3>Evento Show</h3>
+                        <p>Организация ярких праздников и мероприятий в Калининграде.<br>Создаём незабываемые события для любого повода!</p>
+                        <a href="https://eventoshow.ru/" class="btn btn-primary" target="_blank" rel="noopener">Перейти на сайт</a>
                     </div>
                 </div>
             </div>
@@ -513,7 +544,8 @@
                         width="100%"
                         height="600"
                         frameborder="0"
-                        style="border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+                        scrolling="yes"
+                        style="border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); overflow: auto;">
                 </iframe>
             </div>
             <div style="text-align: center; margin-top: 2rem;">
@@ -530,37 +562,81 @@
     <!-- Order Form Section -->
     <section id="order" class="order">
         <div class="container">
-            <h2 class="section-title">Оставить Заявку</h2>
-            <form class="order-form">
-                <div class="form-row">
-                    <div class="form-group">
-                        <input type="text" placeholder="Ваше имя" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="tel" placeholder="Телефон" required>
-                    </div>
+            <h2 class="section-title">Узнайте стоимость за 30 секунд</h2>
+            <p class="section-subtitle">Ответьте на 3 вопроса и получите расчет</p>
+
+            <div class="quiz-form-wrapper">
+                <div class="quiz-progress">
+                    <div class="quiz-progress-bar" id="quizProgressBar"></div>
                 </div>
-                <div class="form-row">
-                    <div class="form-group">
-                        <input type="email" placeholder="Email">
+
+                <form class="quiz-form" id="quizForm">
+                    <!-- Step 1: Event Type -->
+                    <div class="quiz-step active" data-step="1">
+                        <h3 class="quiz-question">Какое мероприятие планируете?</h3>
+                        <div class="quiz-options">
+                            <button type="button" class="quiz-option" data-value="birthday">
+                                <span class="quiz-option-icon">🎂</span>
+                                <span class="quiz-option-text">День рождения</span>
+                            </button>
+                            <button type="button" class="quiz-option" data-value="graduation">
+                                <span class="quiz-option-icon">🎓</span>
+                                <span class="quiz-option-text">Выпускной</span>
+                            </button>
+                            <button type="button" class="quiz-option" data-value="corporate">
+                                <span class="quiz-option-icon">🏢</span>
+                                <span class="quiz-option-text">Корпоратив</span>
+                            </button>
+                            <button type="button" class="quiz-option" data-value="other">
+                                <span class="quiz-option-icon">🎉</span>
+                                <span class="quiz-option-text">Другой повод</span>
+                            </button>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <select required>
-                            <option value="">Тип мероприятия</option>
-                            <option value="graduation">Выпускной</option>
-                            <option value="corporate">Корпоратив</option>
-                            <option value="birthday">День рождения</option>
-                            <option value="wedding">Свадьба</option>
-                            <option value="quest">Квест</option>
-                            <option value="other">Другое</option>
-                        </select>
+
+                    <!-- Step 2: Number of Participants -->
+                    <div class="quiz-step" data-step="2">
+                        <h3 class="quiz-question">Сколько будет участников?</h3>
+                        <div class="quiz-options">
+                            <button type="button" class="quiz-option" data-value="8-12">
+                                <span class="quiz-option-text">8-12 человек</span>
+                            </button>
+                            <button type="button" class="quiz-option" data-value="13-20">
+                                <span class="quiz-option-text">13-20 человек</span>
+                            </button>
+                            <button type="button" class="quiz-option" data-value="20-30">
+                                <span class="quiz-option-text">20-30 человек</span>
+                            </button>
+                            <button type="button" class="quiz-option" data-value="30-50">
+                                <span class="quiz-option-text">30-50 человек</span>
+                            </button>
+                            <button type="button" class="quiz-option" data-value="50+">
+                                <span class="quiz-option-text">Более 50</span>
+                            </button>
+                            <button type="button" class="quiz-option" data-value="unsure">
+                                <span class="quiz-option-text">Пока не знаю</span>
+                            </button>
+                        </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <textarea placeholder="Комментарий" rows="4"></textarea>
-                </div>
-                <button type="submit" class="btn btn-large btn-primary">Отправить заявку</button>
-            </form>
+
+                    <!-- Step 3: Contact Info -->
+                    <div class="quiz-step" data-step="3">
+                        <h3 class="quiz-question">Куда отправить расчет стоимости?</h3>
+                        <div class="quiz-contacts">
+                            <input type="text" class="quiz-input" name="quiz-name" placeholder="Ваше имя" required>
+                            <input type="tel" class="quiz-input" name="quiz-phone" placeholder="Телефон" required>
+                            <div class="quiz-checkbox-group">
+                                <label class="quiz-checkbox">
+                                    <input type="checkbox" name="quiz-consent" required>
+                                    <span class="quiz-checkbox-text">Даю свое согласие на обработку моих персональных данных в соответствии с <a href="#" target="_blank">политикой конфиденциальности</a></span>
+                                </label>
+                            </div>
+                            <button type="submit" class="quiz-submit-btn">Получить расчет</button>
+                        </div>
+                        <button type="button" class="quiz-back-btn" onclick="prevQuizStep()">← Назад</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </section>
 

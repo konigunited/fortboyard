@@ -1208,3 +1208,292 @@ class PhotoGallery {
 
 // Инициализация галереи
 new PhotoGallery();
+
+// ============================================
+// QUIZ FORM FUNCTIONALITY
+// ============================================
+
+let currentQuizStep = 1;
+const quizFormData = {};
+
+// Инициализация quiz формы
+document.addEventListener('DOMContentLoaded', function() {
+    const quizForm = document.getElementById('quizForm');
+    if (!quizForm) return; // Квиз только на главной странице
+
+    const quizOptions = document.querySelectorAll('.quiz-option');
+    const progressBar = document.getElementById('quizProgressBar');
+    const quizSteps = document.querySelectorAll('.quiz-step');
+
+    // Обработка клика по опциям (кнопкам выбора)
+    quizOptions.forEach(option => {
+        option.addEventListener('click', function(e) {
+            e.preventDefault();
+            const step = this.closest('.quiz-step').dataset.step;
+            const fieldName = this.dataset.field || `step${step}`;
+            const value = this.dataset.value;
+
+            // Сохраняем выбор
+            quizFormData[fieldName] = value;
+
+            // Подсветка выбранной опции
+            this.closest('.quiz-options').querySelectorAll('.quiz-option').forEach(opt => {
+                opt.style.borderColor = '#e5e7eb';
+                opt.style.background = '#ffffff';
+            });
+            this.style.borderColor = 'var(--primary-color)';
+            this.style.background = 'rgba(255, 192, 1, 0.05)';
+
+            // Переход к следующему шагу
+            setTimeout(() => {
+                nextQuizStep();
+            }, 300);
+        });
+    });
+
+    // Обработка кнопок "Назад"
+    document.querySelectorAll('.quiz-back-btn').forEach(btn => {
+        btn.addEventListener('click', prevQuizStep);
+    });
+
+    // Обработка отправки формы (шаг 3)
+    quizForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        // Собираем данные из полей ввода
+        const nameInput = document.querySelector('input[name="quiz-name"]');
+        const phoneInput = document.querySelector('input[name="quiz-phone"]');
+        const consentCheckbox = document.querySelector('input[name="quiz-consent"]');
+
+        // Валидация
+        let isValid = true;
+
+        if (!nameInput.value.trim()) {
+            showInputError(nameInput, 'Введите ваше имя');
+            isValid = false;
+        } else {
+            clearInputError(nameInput);
+        }
+
+        if (!phoneInput.value.trim()) {
+            showInputError(phoneInput, 'Введите номер телефона');
+            isValid = false;
+        } else if (phoneInput.value.replace(/\D/g, '').length < 10) {
+            showInputError(phoneInput, 'Введите корректный номер');
+            isValid = false;
+        } else {
+            clearInputError(phoneInput);
+        }
+
+        if (!consentCheckbox.checked) {
+            const checkboxGroup = consentCheckbox.closest('.quiz-checkbox-group');
+            showCheckboxError(checkboxGroup, 'Необходимо согласие на обработку данных');
+            isValid = false;
+        } else {
+            clearCheckboxError(consentCheckbox.closest('.quiz-checkbox-group'));
+        }
+
+        if (!isValid) return;
+
+        // Сохраняем контактные данные
+        quizFormData.name = nameInput.value;
+        quizFormData.phone = phoneInput.value;
+
+        // Отправка данных
+        console.log('Данные квиза:', quizFormData);
+
+        // Показываем успешную отправку
+        const submitBtn = quizForm.querySelector('.quiz-submit-btn');
+        const originalText = submitBtn.textContent;
+        submitBtn.textContent = '✓ Заявка отправлена!';
+        submitBtn.style.background = 'linear-gradient(135deg, #10b981, #059669)';
+        submitBtn.disabled = true;
+
+        // Сброс формы через 2 секунды
+        setTimeout(() => {
+            resetQuizForm();
+            submitBtn.textContent = originalText;
+            submitBtn.style.background = 'linear-gradient(135deg, var(--primary-color), #ff8800)';
+            submitBtn.disabled = false;
+        }, 2000);
+    });
+});
+
+// Переход к следующему шагу
+function nextQuizStep() {
+    const steps = document.querySelectorAll('.quiz-step');
+    const progressBar = document.getElementById('quizProgressBar');
+
+    if (currentQuizStep < steps.length) {
+        // Скрываем текущий шаг
+        steps[currentQuizStep - 1].classList.remove('active');
+
+        // Показываем следующий шаг
+        currentQuizStep++;
+        steps[currentQuizStep - 1].classList.add('active');
+
+        // Обновляем прогресс-бар
+        const progress = (currentQuizStep / steps.length) * 100;
+        progressBar.style.width = progress + '%';
+    }
+}
+
+// Возврат к предыдущему шагу
+function prevQuizStep() {
+    const steps = document.querySelectorAll('.quiz-step');
+    const progressBar = document.getElementById('quizProgressBar');
+
+    if (currentQuizStep > 1) {
+        // Скрываем текущий шаг
+        steps[currentQuizStep - 1].classList.remove('active');
+
+        // Показываем предыдущий шаг
+        currentQuizStep--;
+        steps[currentQuizStep - 1].classList.add('active');
+
+        // Обновляем прогресс-бар
+        const progress = (currentQuizStep / steps.length) * 100;
+        progressBar.style.width = progress + '%';
+    }
+}
+
+// Сброс квиза
+function resetQuizForm() {
+    const steps = document.querySelectorAll('.quiz-step');
+    const progressBar = document.getElementById('quizProgressBar');
+
+    // Возврат к первому шагу
+    steps.forEach(step => step.classList.remove('active'));
+    steps[0].classList.add('active');
+    currentQuizStep = 1;
+    progressBar.style.width = '33.33%';
+
+    // Очистка данных
+    Object.keys(quizFormData).forEach(key => delete quizFormData[key]);
+
+    // Очистка полей
+    document.querySelectorAll('.quiz-input').forEach(input => {
+        input.value = '';
+    });
+
+    const consentCheckbox = document.querySelector('input[name="quiz-consent"]');
+    if (consentCheckbox) consentCheckbox.checked = false;
+
+    // Сброс подсветки опций
+    document.querySelectorAll('.quiz-option').forEach(opt => {
+        opt.style.borderColor = '#e5e7eb';
+        opt.style.background = '#ffffff';
+    });
+}
+
+// Показать ошибку для input
+function showInputError(input, message) {
+    input.style.borderColor = '#ef4444';
+    let errorMsg = input.parentElement.querySelector('.quiz-error');
+    if (!errorMsg) {
+        errorMsg = document.createElement('div');
+        errorMsg.className = 'quiz-error';
+        errorMsg.style.color = '#ef4444';
+        errorMsg.style.fontSize = '0.875rem';
+        errorMsg.style.marginTop = '0.5rem';
+        input.parentElement.appendChild(errorMsg);
+    }
+    errorMsg.textContent = message;
+}
+
+// Очистить ошибку для input
+function clearInputError(input) {
+    input.style.borderColor = '#e5e7eb';
+    const errorMsg = input.parentElement.querySelector('.quiz-error');
+    if (errorMsg) errorMsg.remove();
+}
+
+// Показать ошибку для checkbox
+function showCheckboxError(checkboxGroup, message) {
+    let errorMsg = checkboxGroup.querySelector('.quiz-error');
+    if (!errorMsg) {
+        errorMsg = document.createElement('div');
+        errorMsg.className = 'quiz-error';
+        errorMsg.style.color = '#ef4444';
+        errorMsg.style.fontSize = '0.875rem';
+        errorMsg.style.marginTop = '0.5rem';
+        checkboxGroup.appendChild(errorMsg);
+    }
+    errorMsg.textContent = message;
+}
+
+// Очистить ошибку для checkbox
+function clearCheckboxError(checkboxGroup) {
+    const errorMsg = checkboxGroup.querySelector('.quiz-error');
+    if (errorMsg) errorMsg.remove();
+}
+
+console.log('✅ Quiz форма инициализирована!');
+
+// ============================================
+// PROJECT VIDEO PLAY BUTTONS
+// ============================================
+
+document.addEventListener('DOMContentLoaded', function() {
+    const projectCards = document.querySelectorAll('.project-card');
+
+    projectCards.forEach(card => {
+        const playBtn = card.querySelector('.project-play-btn');
+        const videoContainer = card.querySelector('.project-video');
+        const video = card.querySelector('.project-video-element');
+
+        if (!playBtn || !video || !videoContainer) return;
+
+        // Загрузка видео при наведении
+        card.addEventListener('mouseenter', function() {
+            if (!video.src && video.dataset.src) {
+                const source = video.querySelector('source');
+                if (source && source.dataset.src) {
+                    source.src = source.dataset.src;
+                }
+                video.src = video.dataset.src;
+                video.load();
+            }
+        });
+
+        // Обработка клика на кнопку Play
+        playBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            // Загружаем видео если еще не загружено
+            if (!video.src && video.dataset.src) {
+                const source = video.querySelector('source');
+                if (source && source.dataset.src) {
+                    source.src = source.dataset.src;
+                }
+                video.src = video.dataset.src;
+                video.load();
+            }
+
+            // Воспроизводим видео
+            video.loop = true;
+            video.play()
+                .then(() => {
+                    videoContainer.classList.add('playing');
+                    console.log('▶️ Видео проекта запущено');
+                })
+                .catch(err => {
+                    console.error('❌ Ошибка воспроизведения видео:', err);
+                });
+        });
+
+        // Пауза при клике на видео
+        video.addEventListener('click', function() {
+            if (!video.paused) {
+                video.pause();
+                videoContainer.classList.remove('playing');
+            } else {
+                video.play();
+                videoContainer.classList.add('playing');
+            }
+        });
+    });
+});
+
+console.log('✅ Кнопки Play для видео проектов инициализированы!');
