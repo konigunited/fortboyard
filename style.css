@@ -3611,14 +3611,16 @@ section {
 /* Yandex Reviews Layout */
 .yandex-reviews-layout {
     display: grid;
-    grid-template-columns: minmax(0, 2fr) minmax(260px, 1fr);
+    grid-template-columns: minmax(0, 1.6fr) minmax(320px, 1fr);
     gap: 2rem;
-    align-items: flex-start;
+    align-items: stretch;
+    grid-auto-rows: minmax(0, 1fr);
     margin-top: 3rem;
 }
 
 .yandex-reviews-widget {
     width: 100%;
+    min-height: 520px;
     max-height: 520px;
     overflow-y: auto;
     overflow-x: hidden;
@@ -3640,23 +3642,45 @@ section {
     border: 1px solid rgba(255, 192, 1, 0.45);
     border-radius: 22px;
     box-shadow: 0 16px 40px rgba(255, 192, 1, 0.25);
-    padding: 2.5rem 2rem;
+    padding: 2rem 1.75rem;
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
     text-align: center;
+    align-items: center;
+    justify-content: flex-start;
     height: 100%;
+    min-height: 520px;
+    max-height: 520px;
+    overflow-y: auto;
 }
 
-.badge-logo {
-    width: 120px;
-    height: auto;
-    align-self: center;
+.badge-media {
+    position: relative;
+    overflow: hidden;
+    border-radius: 18px;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: rgba(15, 23, 42, 0.5);
+    isolation: isolate;
 }
 
-.badge-icon {
-    font-size: 3rem;
-    line-height: 1;
+.badge-media::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(160deg, rgba(15, 23, 42, 0.55) 0%, rgba(30, 64, 175, 0.35) 100%);
+    mix-blend-mode: multiply;
+    opacity: 0.85;
+    pointer-events: none;
+}
+
+.badge-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.8) saturate(1.05);
+    transform: scale(1.02);
 }
 
 .badge-title {
@@ -3699,56 +3723,21 @@ section {
     }
 
     .yandex-review-badge {
-        position: static;
+        min-height: auto;
     }
+
 }
 
 @media (max-width: 640px) {
     .yandex-review-badge {
         padding: 2rem 1.5rem;
+        min-height: 420px;
+        max-height: 420px;
     }
 
     .yandex-reviews-widget {
         max-height: 420px;
-    }
-}
-
-@media (max-width: 1024px) {
-    .yandex-review-badge {
-        height: auto;
-    }
-}
-
-/* Yandex Reviews Widget */
-.yandex-reviews-widget {
-    margin-top: 2rem;
-    width: 100%;
-    max-width: 100%;
-    max-height: 420px;
-    overflow-y: auto;
-    overflow-x: hidden;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-}
-
-.yandex-reviews-widget iframe {
-    display: block;
-    width: 100%;
-    min-height: 800px;
-    border: none;
-    border-radius: 12px;
-    margin: 0 auto;
-}
-
-@media (min-width: 1024px) {
-    .yandex-reviews-widget iframe {
-        min-height: 900px;
-    }
-}
-
-@media (max-width: 640px) {
-    .yandex-reviews-widget iframe {
-        min-height: 700px;
+        min-height: 420px;
     }
 }
 
