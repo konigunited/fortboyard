@@ -1444,34 +1444,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (!playBtn || !video || !videoContainer) return;
 
-        // Загрузка видео при наведении
-        card.addEventListener('mouseenter', function() {
-            if (!video.src && video.dataset.src) {
-                const source = video.querySelector('source');
-                if (source && source.dataset.src) {
-                    source.src = source.dataset.src;
-                }
-                video.src = video.dataset.src;
-                video.load();
-            }
-        });
-
         // Обработка клика на кнопку Play
         playBtn.addEventListener('click', function(e) {
             e.preventDefault();
             e.stopPropagation();
 
-            // Загружаем видео если еще не загружено
-            if (!video.src && video.dataset.src) {
-                const source = video.querySelector('source');
-                if (source && source.dataset.src) {
-                    source.src = source.dataset.src;
-                }
-                video.src = video.dataset.src;
-                video.load();
-            }
-
-            // Воспроизводим видео
+            // Воспроизводим видео с зацикливанием
             video.loop = true;
             video.play()
                 .then(() => {
@@ -1484,7 +1462,10 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         // Пауза при клике на видео
-        video.addEventListener('click', function() {
+        video.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+
             if (!video.paused) {
                 video.pause();
                 videoContainer.classList.remove('playing');
