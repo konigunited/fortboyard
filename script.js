@@ -888,12 +888,12 @@ if (!isLowEndDevice && !prefersReducedMotion && window.innerWidth > 768) {
 // ============================================
 
 // Пауза видео когда они вне зоны видимости
-// Исключаем hero-видео, так как оно должно играть всегда
+// Исключаем hero-видео и видео проектов
 const videoObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         const video = entry.target;
-        // Пропускаем hero-видео
-        if (video.id === 'heroVideo') return;
+        // Пропускаем hero-видео и видео проектов
+        if (video.id === 'heroVideo' || video.classList.contains('project-video-element')) return;
 
         if (entry.isIntersecting) {
             // Видео в зоне видимости - играем
@@ -911,9 +911,12 @@ const videoObserver = new IntersectionObserver((entries) => {
     threshold: 0.5 // Видео должно быть видно хотя бы на 50%
 });
 
-// Наблюдаем за всеми видео кроме hero
+// Наблюдаем за всеми видео кроме hero и проектов
 document.querySelectorAll('video').forEach(video => {
-    videoObserver.observe(video);
+    // Не наблюдаем за видео проектов
+    if (!video.classList.contains('project-video-element')) {
+        videoObserver.observe(video);
+    }
 });
 
 console.log('📹 Оптимизация видео включена');
