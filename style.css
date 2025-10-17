@@ -3608,6 +3608,78 @@ section {
     font-size: 1.125rem;
 }
 
+/* Yandex Reviews Layout */
+.yandex-reviews-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(260px, 1fr);
+    gap: 2rem;
+    align-items: stretch;
+    margin-top: 3rem;
+}
+
+.yandex-review-badge {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 240, 200, 0.9) 100%);
+    border: 1px solid rgba(255, 192, 1, 0.4);
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(255, 192, 1, 0.25);
+    padding: 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    text-align: center;
+    position: sticky;
+    top: 90px;
+}
+
+.badge-icon {
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.badge-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.badge-text {
+    color: #4b5563;
+    line-height: 1.6;
+}
+
+.badge-link {
+    display: inline-flex;
+    align-self: center;
+    padding: 0.75rem 1.75rem;
+    border-radius: 999px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.badge-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(255, 192, 1, 0.45);
+}
+
+@media (max-width: 1024px) {
+    .yandex-reviews-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .yandex-review-badge {
+        position: static;
+    }
+}
+
+@media (max-width: 640px) {
+    .yandex-review-бadge {
+        padding: 2rem 1.5rem;
+    }
+}
+
 /* Yandex Reviews Widget */
 .yandex-reviews-widget {
     margin-top: 2rem;
@@ -4027,5 +4099,6 @@ section {
         font-size: 1.2rem;
     }
 }
+
 
 
