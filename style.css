@@ -1,4 +1,4 @@
-/* Reset & Base Styles */
+﻿/* Reset & Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -3546,161 +3546,7 @@ section {
 
 .reviews-section .section-subtitle {
     color: #4b5563;
-}
-
-.yandex-reviews-slider {
-    position: relative;
-    margin: 2.5rem auto 0;
-    padding: 0 3.5rem;
-    max-width: 960px;
-}
-
-.yandex-reviews-window {
-    overflow: hidden;
-    border-radius: 18px;
-}
-
-.yandex-reviews-track {
-    display: flex;
-    gap: 1.5rem;
-    transition: transform 0.5s ease;
-    will-change: transform;
-    touch-action: pan-y;
-}
-
-.yandex-review-card {
-    flex: 0 0 100%;
-    background: linear-gradient(135deg, #ffffff 0%, #f9fafb 100%);
-    border-radius: 18px;
-    padding: 2rem;
-    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
-    border: 1px solid rgba(15, 23, 42, 0.08);
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    min-height: 260px;
-}
-
-.yandex-review-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 0.95rem;
-    color: #6b7280;
-}
-
-.yandex-review-rating {
-    color: #ffc001;
-    font-size: 1.2rem;
-    letter-spacing: 0.1em;
-}
-
-.yandex-review-date {
-    font-weight: 500;
-}
-
-.yandex-review-text {
-    font-size: 1.125rem;
-    line-height: 1.7;
-    color: #1f2937;
-    margin: 0;
-}
-
-.yandex-review-footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    font-weight: 600;
-    color: #111827;
-}
-
-.yandex-review-link {
-    font-weight: 600;
-    color: var(--primary-color);
-    text-decoration: none;
-    transition: color 0.2s ease;
-    white-space: nowrap;
-}
-
-.yandex-review-link:hover {
-    color: var(--secondary-color);
-}
-
-.yandex-reviews-nav {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    border: none;
-    background: rgba(255, 255, 255, 0.95);
-    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.18);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-    color: #1f2937;
-    cursor: pointer;
-    transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
-    z-index: 2;
-}
-
-.yandex-reviews-nav:hover {
-    transform: translateY(-50%) scale(1.05);
-    box-shadow: 0 12px 32px rgba(15, 23, 42, 0.2);
-}
-
-.yandex-reviews-nav:disabled {
-    opacity: 0.4;
-    cursor: not-allowed;
-    box-shadow: none;
-}
-
-.yandex-reviews-prev {
-    left: 0;
-}
-
-.yandex-reviews-next {
-    right: 0;
-}
-
-.yandex-reviews-counter {
-    margin-top: 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.25rem;
-    font-weight: 600;
-    color: #4b5563;
-}
-
-.yandex-reviews-counter-separator {
-    opacity: 0.5;
-}
-
-@media (max-width: 1024px) {
-    .yandex-reviews-slider {
-        padding: 0 2.5rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .yandex-reviews-slider {
-        padding: 0 1rem;
-    }
-
-    .yandex-reviews-nav {
-        display: none;
-    }
-
-    .yandex-review-card {
-        padding: 1.5rem;
-    }
-}
-
-.reviews-grid {
+}.reviews-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 2rem;
@@ -3766,7 +3612,10 @@ section {
 .yandex-reviews-widget {
     margin-top: 2rem;
     width: 100%;
-    overflow: hidden;
+    max-height: 600px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: 12px;
 }
 
 .yandex-reviews-widget iframe {
@@ -4160,3 +4009,4 @@ section {
         font-size: 1.2rem;
     }
 }
+
