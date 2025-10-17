@@ -1394,9 +1394,6 @@ section {
 /* Floating Photo Cards */
 .floating-photo-card {
     position: absolute;
-    width: 160px;
-    height: 210px;
-    padding: 14px;
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.98);
     border: 2px solid rgba(255, 192, 1, 0.45);
@@ -1405,61 +1402,126 @@ section {
     align-items: center;
     justify-content: center;
     pointer-events: none;
-    z-index: 1;
     transition: transform 0.3s ease;
 }
 
 .floating-photo-card img {
     width: 100%;
     height: 100%;
-    border-radius: 14px;
+    border-radius: 18px;
     object-fit: cover;
     box-shadow: 0 10px 24px rgba(15, 23, 42, 0.15);
 }
 
-.floating-photo-left {
+.floating-photo-card--large {
+    width: 230px;
+    height: 290px;
+    padding: 18px;
+    opacity: 0.95;
+    z-index: 1;
+}
+
+.floating-photo-card--large img {
+    border-radius: 20px;
+}
+
+.floating-photo-card--small {
+    width: 160px;
+    height: 210px;
+    padding: 14px;
+    z-index: 2;
+}
+
+.floating-photo-card--small img {
+    border-radius: 14px;
+}
+
+.floating-photo-left--large {
+    top: 40%;
+    left: -250px;
+    transform: translateY(-50%) rotate(-4deg);
+    animation: floatPhotoLeftLarge 11s ease-in-out infinite;
+}
+
+.floating-photo-right--large {
+    top: 60%;
+    right: -260px;
+    transform: translateY(-50%) rotate(4deg);
+    animation: floatPhotoRightLarge 11s ease-in-out infinite;
+}
+
+.floating-photo-left--small {
     top: 45%;
     left: -190px;
-    transform: translateY(-50%) rotate(-6deg);
-    animation: floatPhotoLeft 7s ease-in-out infinite;
+    transform: translateY(-50%) rotate(-7deg);
+    animation: floatPhotoLeftSmall 7s ease-in-out infinite;
 }
 
-.floating-photo-right {
+.floating-photo-right--small {
     top: 55%;
     right: -190px;
-    transform: translateY(-50%) rotate(6deg);
-    animation: floatPhotoRight 7s ease-in-out infinite;
+    transform: translateY(-50%) rotate(7deg);
+    animation: floatPhotoRightSmall 7s ease-in-out infinite;
 }
 
-@keyframes floatPhotoLeft {
+@keyframes floatPhotoLeftLarge {
     0%, 100% {
-        transform: translateY(-50%) rotate(-6deg);
+        transform: translateY(-50%) rotate(-4deg);
     }
     50% {
-        transform: translateY(-62%) rotate(-2deg);
+        transform: translateY(-64%) rotate(-1deg);
     }
 }
 
-@keyframes floatPhotoRight {
+@keyframes floatPhotoRightLarge {
     0%, 100% {
-        transform: translateY(-50%) rotate(6deg);
+        transform: translateY(-50%) rotate(4deg);
     }
     50% {
-        transform: translateY(-38%) rotate(2deg);
+        transform: translateY(-36%) rotate(1deg);
+    }
+}
+
+@keyframes floatPhotoLeftSmall {
+    0%, 100% {
+        transform: translateY(-50%) rotate(-7deg);
+    }
+    50% {
+        transform: translateY(-62%) rotate(-3deg);
+    }
+}
+
+@keyframes floatPhotoRightSmall {
+    0%, 100% {
+        transform: translateY(-50%) rotate(7deg);
+    }
+    50% {
+        transform: translateY(-38%) rotate(3deg);
     }
 }
 
 @media (max-width: 1400px) {
-    .floating-photo-card {
+    .floating-photo-card--large {
+        width: 200px;
+        height: 250px;
+        padding: 16px;
+    }
+    .floating-photo-left--large {
+        left: -215px;
+    }
+    .floating-photo-right--large {
+        right: -220px;
+    }
+    .floating-photo-card--small {
         width: 140px;
         height: 190px;
         padding: 12px;
     }
-    .floating-photo-left {
-        left: -160px;
+    .floating-photo-left--small {
+        left: -155px;
     }
-    .floating-photo-right {
-        right: -160px;
+    .floating-photo-right--small {
+        right: -155px;
     }
 }
 
